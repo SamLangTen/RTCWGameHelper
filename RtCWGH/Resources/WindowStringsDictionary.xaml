@@ -1,0 +1,4 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:Object x:Key="MainWindow_StartPage_Description">RtCW Game Helper is a game assistant for RtCW.With this assistant,all the players can play RtCW easilier.</sys:Object>
+</ResourceDictionary>
