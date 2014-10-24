@@ -120,4 +120,13 @@
   <data name="MainWindow_StartPage_Description" xml:space="preserve">
     <value>RtCW Game Helper is a game assistant for RtCW.With this assistant,all the players can play RtCW easilier.</value>
   </data>
+  <data name="MainWindow_StartPage_FunctionDescription" xml:space="preserve">
+    <value>Features:
+Saves Manager
+Cheat Manager
+Mod Manager...</value>
+  </data>
+  <data name="MainWindow_StartPage_StartGame" xml:space="preserve">
+    <value>Start Game</value>
+  </data>
 </root>

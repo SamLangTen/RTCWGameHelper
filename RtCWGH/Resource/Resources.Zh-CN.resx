@@ -118,6 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="MainWindow_StartPage_Description" xml:space="preserve">
-    <value>RtCW Game Helper是一个方便玩家游玩RtCW的游戏助手。</value>
+    <value>RtCW Game Helper是一个方便玩家游玩和管理重返德军总部(RtCW)的游戏助手。</value>
+  </data>
+  <data name="MainWindow_StartPage_FunctionDescription" xml:space="preserve">
+    <value>本工具有以下功能：
+存档管理
+作弊管理
+Mod管理...</value>
+  </data>
+  <data name="MainWindow_StartPage_StartGame" xml:space="preserve">
+    <value>开始游戏</value>
   </data>
 </root>

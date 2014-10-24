@@ -68,5 +68,26 @@ Namespace My.Resources
                 Return ResourceManager.GetString("MainWindow_StartPage_Description", resourceCulture)
             End Get
         End Property
+        
+        '''<summary>
+        '''  查找类似 Features:
+        '''Saves Manager
+        '''Cheat Manager
+        '''Mod Manager... 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_StartPage_FunctionDescription() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_StartPage_FunctionDescription", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Start Game 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_StartPage_StartGame() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_StartPage_StartGame", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace

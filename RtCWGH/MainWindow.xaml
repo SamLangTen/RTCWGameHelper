@@ -2,14 +2,16 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:res="clr-namespace:RtCWGH.My.Resources"
-    Title="RtCW Game Helper" Height="449.227" Width="710.324" Icon="0.ico">
+    Title="RtCW Game Helper" Height="598.55" Width="750.028" Icon="0.ico">
     <Grid>
         <TabControl Margin="10">
             <TabItem Header="开始">
                 <Grid Background="#FFFFFFFF">
                     <Label Content="RtCW Game Helper" Margin="189.5,40,134.824,0" Width="327" FontSize="32" Height="51" VerticalAlignment="Top" HorizontalAlignment="Center" MinWidth="327" MinHeight="51" ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
                     <Image Margin="151.5,49,466.824,0" Source="0.ico" Stretch="Fill" Height="32" VerticalAlignment="Top" HorizontalAlignment="Center" Width="33" StretchDirection="UpOnly"/>
-                    <TextBlock Text="{x:Static res:Resources.MainWindow_StartPage_Description}" TextWrapping="WrapWithOverflow" Height="174" Margin="210.412,96,170.912,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="295"/>
+                    <TextBlock Text="{x:Static res:Resources.MainWindow_StartPage_Description}" TextWrapping="WrapWithOverflow" Height="70" Margin="214.912,96,175.412,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="295"/>
+                    <TextBlock Text="{x:Static res:Resources.MainWindow_StartPage_FunctionDescription}" TextWrapping="WrapWithOverflow" Height="70" Margin="215,171,175,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="295"/>
+                    <Button Content="{x:Static res:Resources.MainWindow_StartPage_StartGame}" HorizontalAlignment="Center" Margin="246,252,207,216" VerticalAlignment="Center" Width="207" Height="40" FontSize="16"/>
                 </Grid>
             </TabItem>
             <TabItem Header="作弊管理">
