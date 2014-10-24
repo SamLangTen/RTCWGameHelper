@@ -3,6 +3,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
 
+                <ResourceDictionary Source="Themes/Monotone.Colors.xaml" />
+                <ResourceDictionary Source="Themes/Monotone.Brushes.xaml" />
+                <ResourceDictionary Source="Themes/Monotone.xaml" />
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
