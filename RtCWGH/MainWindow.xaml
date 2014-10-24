@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:res="clr-namespace:RtCWGH.My.Resources"
     Title="RtCW Game Helper" Height="605.129" Width="801.429" Icon="0.ico">
-    <Grid>
+    <Grid Background="DarkGray">
         <TabControl Margin="10">
             <TabItem Header="开始">
                 <Grid>
@@ -15,7 +15,7 @@
                 </Grid>
             </TabItem>
             <TabItem Header="作弊管理">
-                <Grid Background="#FFFFFFFF"/>
+                <Grid/>
             </TabItem>
         </TabControl>
 
