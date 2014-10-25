@@ -135,6 +135,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\Resources.Zh-CN.resx" />
+    <EmbeddedResource Include="Resource\Resources.zh-HK.resx" />
     <None Include="app.config" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

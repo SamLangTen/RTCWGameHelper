@@ -4,6 +4,6 @@
     ' 可以在此文件中进行处理。
 
     Private Sub Application_Startup(sender As Object, e As StartupEventArgs) Handles Me.Startup
-        System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("en-US")
+        'System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("zh-HK")
     End Sub
 End Class
