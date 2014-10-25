@@ -181,6 +181,78 @@
   <data name="MainWindow_LocalizedPage_Uninstall" xml:space="preserve">
     <value>卸载汉化包(_U)</value>
   </data>
+  <data name="MainWindow_SaveHeader" xml:space="preserve">
+    <value>存档管理</value>
+  </data>
+  <data name="MainWindow_SavePage_LoadOrgMap_Header" xml:space="preserve">
+    <value>加载原版地图</value>
+  </data>
+  <data name="MainWindow_SavePage_LoadOrgMap_LoadButton" xml:space="preserve">
+    <value>加载(_L)</value>
+  </data>
+  <data name="MainWindow_SavePage_LoadOrgMap_MapName" xml:space="preserve">
+    <value>地图名</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_Add" xml:space="preserve">
+    <value>添加(_A)</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_AnotherSetting" xml:space="preserve">
+    <value>其他设置</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_Apply" xml:space="preserve">
+    <value>应用(_P)</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_ColLoadKey" xml:space="preserve">
+    <value>读档时的按键</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_ColSaveKey" xml:space="preserve">
+    <value>存档时的按键</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_ColSaveName" xml:space="preserve">
+    <value>存档名</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_Delete" xml:space="preserve">
+    <value>删除(_D)</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_Description" xml:space="preserve">
+    <value>原版游戏中按F5可以将存档存入quicksave，本功能可以绑定更多的存档快捷键。</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_Header" xml:space="preserve">
+    <value>存档快捷键定义</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_MainSetting" xml:space="preserve">
+    <value>主程序设置</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_AnotherSave" xml:space="preserve">
+    <value>其他位置存档</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_AutoSaves" xml:space="preserve">
+    <value>自动存档</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_ColGameTime" xml:space="preserve">
+    <value>游戏时间</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_ColHeath" xml:space="preserve">
+    <value>生命值</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_ColMapName" xml:space="preserve">
+    <value>地图名</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_ColSaveName" xml:space="preserve">
+    <value>存档名</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_ColTime" xml:space="preserve">
+    <value>修改时间</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_Header" xml:space="preserve">
+    <value>存档管理</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_MainSave" xml:space="preserve">
+    <value>主程序存档</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_NormalSaves" xml:space="preserve">
+    <value>普通存档</value>
+  </data>
   <data name="MainWindow_StartPage_Description" xml:space="preserve">
     <value>RtCW Game Helper是一个方便玩家游玩和管理重返德军总部(RtCW)的游戏助手。</value>
   </data>

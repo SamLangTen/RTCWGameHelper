@@ -183,6 +183,78 @@ Two ways to install:
   <data name="MainWindow_LocalizedPage_Uninstall" xml:space="preserve">
     <value>_Uninstall</value>
   </data>
+  <data name="MainWindow_SaveHeader" xml:space="preserve">
+    <value>Saves</value>
+  </data>
+  <data name="MainWindow_SavePage_LoadOrgMap_Header" xml:space="preserve">
+    <value>Load Original Map</value>
+  </data>
+  <data name="MainWindow_SavePage_LoadOrgMap_LoadButton" xml:space="preserve">
+    <value>_Load</value>
+  </data>
+  <data name="MainWindow_SavePage_LoadOrgMap_MapName" xml:space="preserve">
+    <value>Map Name</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_Add" xml:space="preserve">
+    <value>_Add</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_AnotherSetting" xml:space="preserve">
+    <value>Another Setting</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_Apply" xml:space="preserve">
+    <value>A_pply</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_ColLoadKey" xml:space="preserve">
+    <value>Load Key</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_ColSaveKey" xml:space="preserve">
+    <value>Save Key</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_ColSaveName" xml:space="preserve">
+    <value>Save Name</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_Delete" xml:space="preserve">
+    <value>_Delete</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_Description" xml:space="preserve">
+    <value>In RtCW,you can save by F5 key. Now you can bind more auto saving key.</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_Header" xml:space="preserve">
+    <value>Saving Hotkey Definition</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveHotKey_MainSetting" xml:space="preserve">
+    <value>Main Setting</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_AnotherSave" xml:space="preserve">
+    <value>Other Saves</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_AutoSaves" xml:space="preserve">
+    <value>Auto Saves</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_ColGameTime" xml:space="preserve">
+    <value>Total Game Time</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_ColHeath" xml:space="preserve">
+    <value>Health</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_ColMapName" xml:space="preserve">
+    <value>Map Name</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_ColSaveName" xml:space="preserve">
+    <value>Saves Name</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_ColTime" xml:space="preserve">
+    <value>Change Time</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_Header" xml:space="preserve">
+    <value>Saves Manager</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_MainSave" xml:space="preserve">
+    <value>Main Saves</value>
+  </data>
+  <data name="MainWindow_SavePage_SaveMgr_NormalSaves" xml:space="preserve">
+    <value>Normal Saves</value>
+  </data>
   <data name="MainWindow_StartPage_Description" xml:space="preserve">
     <value>RtCW Game Helper is a game assistant for RtCW.With this assistant,all the players can play RtCW easilier.</value>
   </data>

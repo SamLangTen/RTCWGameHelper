@@ -8,13 +8,13 @@
             <TabItem Header="{x:Static res:Resources.MainWindow_HomeHeader}">
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="493*"/>
-                        <RowDefinition Height="26*"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition Width="379"/>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
                     <Label Content="RtCW Game Helper" Margin="54.002,40,10.001,0" Width="314.998" FontSize="32" Height="51" VerticalAlignment="Top" HorizontalAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Auto" Grid.Column="1"/>
                     <Image Margin="17.555,49,329.446,0" Source="0.ico" Stretch="Fill" Height="32" VerticalAlignment="Top" HorizontalAlignment="Center" Width="32" StretchDirection="UpOnly" Grid.Column="1"/>
@@ -46,13 +46,13 @@
                                 <RowDefinition Height="40"/>
                                 <RowDefinition Height="40"/>
                             </Grid.RowDefinitions>
-                            <RadioButton Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_MainSetting}" Margin="10,6,29.079,6.991" IsChecked="True"/>
-                            <RadioButton Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_AnotherSetting}" Margin="5,6,22.077,6.991" Grid.Column="1"/>
+                            <RadioButton Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_MainSetting}" Margin="10,6,29,6" IsChecked="True"/>
+                            <RadioButton Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_AnotherSetting}" Margin="5,6,29,6" Grid.Column="1"/>
                             <ListView Margin="10,2.24,10,10" Grid.ColumnSpan="2" Grid.Row="1">
                                 <ListView.View>
                                     <GridView>
-                                        <GridViewColumn Header="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_ListHead_Key}" Width="100"/>
-                                        <GridViewColumn Header="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_ListHead_Cmd}" Width="100"/>
+                                        <GridViewColumn Header="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_ListHead_Key}" />
+                                        <GridViewColumn Header="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_ListHead_Cmd}" />
                                     </GridView>
                                 </ListView.View>
                             </ListView>
@@ -87,6 +87,103 @@
 
                 </Grid>
             </TabItem>
+			<TabItem Header="{x:Static res:Resources.MainWindow_SaveHeader}">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="71"/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="232*"/>
+						<ColumnDefinition Width="531*"/>
+					</Grid.ColumnDefinitions>
+					<GroupBox Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Header}" Grid.RowSpan="2">
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition/>
+							</Grid.ColumnDefinitions>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="30"/>
+								<RowDefinition/>
+							</Grid.RowDefinitions>
+							<RadioButton Content="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_MainSave}" Margin="0,5"/>
+							<RadioButton Content="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_AnotherSave}" Margin="5,5" Grid.Column="1"/>
+							<TabControl Grid.Row="1" Grid.ColumnSpan="2">
+								<TabItem Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_NormalSaves}">
+									<ListView>
+										<ListView.View>
+											<GridView>
+												<GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_ColSaveName}" />
+												<GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColTime}"/>
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColGameTime}"/>
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColHeath}"/>
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColMapName}"/>
+											</GridView>
+										</ListView.View>
+									</ListView>
+								</TabItem>
+								<TabItem Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_AutoSaves}">
+									<ListView>
+										<ListView.View>
+											<GridView>
+												<GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_ColSaveName}" />
+												<GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColTime}"/>
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColGameTime}"/>
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColHeath}"/>
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColMapName}"/>
+											</GridView>
+										</ListView.View>
+									</ListView>
+								</TabItem>
+							</TabControl>
+						</Grid>
+					</GroupBox>
+                    <GroupBox Grid.Column="1" Header="{x:Static res:Resources.MainWindow_SavePage_LoadOrgMap_Header}" Margin="10,0,0,0">
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition/>
+								<ColumnDefinition Width="Auto"/>
+							</Grid.ColumnDefinitions>
+							<Label Content="{x:Static res:Resources.MainWindow_SavePage_LoadOrgMap_MapName}" Margin="0,10"></Label>
+							<ComboBox Grid.Column="1" Margin="10"></ComboBox>
+							<Button Content="{x:Static res:Resources.MainWindow_SavePage_LoadOrgMap_LoadButton}" Grid.Column="2" Margin="0,10"></Button>
+						</Grid>
+					</GroupBox>
+					<GroupBox Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Header}" Grid.Column="1" Grid.Row="1" Margin="10,0,0,0">
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition/>
+							</Grid.ColumnDefinitions>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="Auto"/>
+								<RowDefinition Height="30"/>
+								<RowDefinition/>
+								<RowDefinition Height="Auto"/>
+							</Grid.RowDefinitions>
+							<Label Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Description}" Margin="10,5,10,5.749" Grid.ColumnSpan="4"/>
+							<RadioButton Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_MainSetting}" Grid.ColumnSpan="3" Margin="10,5,10,5" Grid.Row="1"/>
+							<RadioButton Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_AnotherSetting}" Grid.Column="3" Margin="10,5,10,5" Grid.Row="1"/>
+							<ListView Grid.ColumnSpan="4" Grid.Row="2" Margin="5,5,0,5">
+								<ListView.View>
+									<GridView>
+										<GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_ColSaveKey}"/>
+                                        <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_ColLoadKey}"/>
+                                        <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_ColSaveName}"/>
+									</GridView>
+								</ListView.View>
+							</ListView>
+							<Button Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Add}" Grid.Row="3" Margin="5,5,5,5"></Button>
+                            <Button Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Delete}" Grid.Row="3" Grid.Column="1" Margin="5,5,5,5"></Button>
+                            <Button Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Apply}" Grid.Row="3" Grid.Column="2" Margin="5,5,5,5"></Button>
+						</Grid>
+					</GroupBox>
+				</Grid>
+			</TabItem>
         </TabControl>
 
     </Grid>

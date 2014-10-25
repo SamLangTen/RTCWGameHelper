@@ -241,6 +241,222 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  查找类似 Saves 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SaveHeader() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SaveHeader", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Load Original Map 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_LoadOrgMap_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_LoadOrgMap_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Load 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_LoadOrgMap_LoadButton() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_LoadOrgMap_LoadButton", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Map Name 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_LoadOrgMap_MapName() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_LoadOrgMap_MapName", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Add 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveHotKey_Add() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveHotKey_Add", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Another Setting 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveHotKey_AnotherSetting() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveHotKey_AnotherSetting", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 A_pply 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveHotKey_Apply() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveHotKey_Apply", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Load Key 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveHotKey_ColLoadKey() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveHotKey_ColLoadKey", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Save Key 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveHotKey_ColSaveKey() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveHotKey_ColSaveKey", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Save Name 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveHotKey_ColSaveName() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveHotKey_ColSaveName", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Delete 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveHotKey_Delete() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveHotKey_Delete", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 In RtCW,you can save by F5 key. Now you can bind more auto saving key. 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveHotKey_Description() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveHotKey_Description", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Saving Hotkey Definition 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveHotKey_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveHotKey_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Main Setting 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveHotKey_MainSetting() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveHotKey_MainSetting", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Other Saves 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveMgr_AnotherSave() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveMgr_AnotherSave", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Auto Saves 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveMgr_AutoSaves() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveMgr_AutoSaves", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Total Game Time 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveMgr_ColGameTime() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveMgr_ColGameTime", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Health 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveMgr_ColHeath() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveMgr_ColHeath", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Map Name 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveMgr_ColMapName() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveMgr_ColMapName", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Saves Name 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveMgr_ColSaveName() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveMgr_ColSaveName", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Change Time 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveMgr_ColTime() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveMgr_ColTime", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Saves Manager 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveMgr_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveMgr_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Main Saves 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveMgr_MainSave() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveMgr_MainSave", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Normal Saves 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_SavePage_SaveMgr_NormalSaves() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_SavePage_SaveMgr_NormalSaves", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  查找类似 RtCW Game Helper is a game assistant for RtCW.With this assistant,all the players can play RtCW easilier. 的本地化字符串。
         '''</summary>
         Public ReadOnly Property MainWindow_StartPage_Description() As String
