@@ -126,7 +126,10 @@ Saves Manager
 Cheat Manager
 Mod Manager...</value>
   </data>
+  <data name="MainWindow_StartPage_ResetFolderNVersion" xml:space="preserve">
+    <value>_Reset Folder and Version Setting</value>
+  </data>
   <data name="MainWindow_StartPage_StartGame" xml:space="preserve">
-    <value>Start Game</value>
+    <value>_Start Game</value>
   </data>
 </root>

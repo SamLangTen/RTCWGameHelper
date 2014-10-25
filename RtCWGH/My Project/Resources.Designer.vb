@@ -82,7 +82,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  查找类似 Start Game 的本地化字符串。
+        '''  查找类似 _Reset Folder and Version Setting 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_StartPage_ResetFolderNVersion() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_StartPage_ResetFolderNVersion", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Start Game 的本地化字符串。
         '''</summary>
         Public ReadOnly Property MainWindow_StartPage_StartGame() As String
             Get

@@ -126,7 +126,10 @@
 作弊管理
 Mod管理...</value>
   </data>
+  <data name="MainWindow_StartPage_ResetFolderNVersion" xml:space="preserve">
+    <value>重新设置游戏目录及版本(_R)</value>
+  </data>
   <data name="MainWindow_StartPage_StartGame" xml:space="preserve">
-    <value>开始游戏</value>
+    <value>开始游戏(_S)</value>
   </data>
 </root>

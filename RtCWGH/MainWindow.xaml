@@ -7,16 +7,27 @@
         <TabControl Margin="10">
             <TabItem Header="开始">
                 <Grid>
-                    <Label Content="RtCW Game Helper" Margin="189.5,40,134.824,0" Width="327" FontSize="32" Height="51" VerticalAlignment="Top" HorizontalAlignment="Center" MinWidth="327" MinHeight="51" ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
-                    <Image Margin="151.5,49,466.824,0" Source="0.ico" Stretch="Fill" Height="32" VerticalAlignment="Top" HorizontalAlignment="Center" Width="33" StretchDirection="UpOnly"/>
-                    <TextBlock Text="{x:Static res:Resources.MainWindow_StartPage_Description}" TextWrapping="WrapWithOverflow" Height="70" Margin="214.912,96,175.412,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="295"/>
-                    <TextBlock Text="{x:Static res:Resources.MainWindow_StartPage_FunctionDescription}" TextWrapping="WrapWithOverflow" Height="70" Margin="215,171,175,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="295"/>
-                    <Button Content="{x:Static res:Resources.MainWindow_StartPage_StartGame}" HorizontalAlignment="Center" Margin="246,252,207,216" VerticalAlignment="Center" Width="207" Height="40" FontSize="16"/>
+                	<Grid.RowDefinitions>
+                		<RowDefinition Height="493*"/>
+                		<RowDefinition Height="26*"/>
+                	</Grid.RowDefinitions>
+                	<Grid.ColumnDefinitions>
+                		<ColumnDefinition/>
+                		<ColumnDefinition Width="379"/>
+                		<ColumnDefinition/>
+                	</Grid.ColumnDefinitions>
+                    <Label Content="RtCW Game Helper" Margin="54.002,40,10.001,0" Width="314.998" FontSize="32" Height="51" VerticalAlignment="Top" HorizontalAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Auto" Grid.Column="1"/>
+                    <Image Margin="17.555,49,329.446,0" Source="0.ico" Stretch="Fill" Height="32" VerticalAlignment="Top" HorizontalAlignment="Center" Width="32" StretchDirection="UpOnly" Grid.Column="1"/>
+                    <TextBlock Text="{x:Static res:Resources.MainWindow_StartPage_Description}" TextWrapping="WrapWithOverflow" Height="70" Margin="54.294,96,21.295,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="303.412" Grid.Column="1"/>
+                    <TextBlock Text="{x:Static res:Resources.MainWindow_StartPage_FunctionDescription}" TextWrapping="WrapWithOverflow" Height="70" Margin="54.502,171,21.501,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="302.998" Grid.Column="1"/>
+                    <Button Content="{x:Static res:Resources.MainWindow_StartPage_StartGame}" HorizontalAlignment="Center" Margin="100,257,66,0" VerticalAlignment="Top" Width="213" Height="40" FontSize="16" Grid.Column="1"/>
+                    <Label Content="{x:Static res:Resources.MainWindow_StartPage_ResetFolderNVersion}" Grid.Column="2" Grid.Row="1" Margin="0,0,0,0" Height="26" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="192" Cursor="Hand" FontStyle="Italic"/>
                 </Grid>
             </TabItem>
             <TabItem Header="作弊管理">
                 <Grid/>
             </TabItem>
+            <Label Content="的撒了个大街上拉过多久啊来对抗冠军联赛开局的" Margin="268.322,179.444,0,0" HorizontalAlignment="Left" Width="270" VerticalAlignment="Top" Height="52.24"/>
         </TabControl>
 
     </Grid>
