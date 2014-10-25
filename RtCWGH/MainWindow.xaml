@@ -7,15 +7,15 @@
         <TabControl Margin="10">
             <TabItem Header="开始">
                 <Grid>
-                	<Grid.RowDefinitions>
-                		<RowDefinition Height="493*"/>
-                		<RowDefinition Height="26*"/>
-                	</Grid.RowDefinitions>
-                	<Grid.ColumnDefinitions>
-                		<ColumnDefinition/>
-                		<ColumnDefinition Width="379"/>
-                		<ColumnDefinition/>
-                	</Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="493*"/>
+                        <RowDefinition Height="26*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="379"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
                     <Label Content="RtCW Game Helper" Margin="54.002,40,10.001,0" Width="314.998" FontSize="32" Height="51" VerticalAlignment="Top" HorizontalAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Auto" Grid.Column="1"/>
                     <Image Margin="17.555,49,329.446,0" Source="0.ico" Stretch="Fill" Height="32" VerticalAlignment="Top" HorizontalAlignment="Center" Width="32" StretchDirection="UpOnly" Grid.Column="1"/>
                     <TextBlock Text="{x:Static res:Resources.MainWindow_StartPage_Description}" TextWrapping="WrapWithOverflow" Height="70" Margin="54.294,96,21.295,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="303.412" Grid.Column="1"/>
@@ -25,9 +25,47 @@
                 </Grid>
             </TabItem>
             <TabItem Header="作弊管理">
-                <Grid/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="48"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="278*"/>
+                        <ColumnDefinition Width="485*"/>
+                    </Grid.ColumnDefinitions>
+                    <GroupBox Header="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_Header}" Grid.RowSpan="2">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="135*"/>
+                                <ColumnDefinition Width="131*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                            </Grid.RowDefinitions>
+                            <RadioButton Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_MainSetting}" HorizontalAlignment="Left" Height="22" Margin="10,10,0,0" VerticalAlignment="Top" Width="96" IsChecked="True"/>
+                            <RadioButton Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_AnotherSetting}" HorizontalAlignment="Left" Height="22" Margin="111,10,0,0" VerticalAlignment="Top" Width="96" Grid.ColumnSpan="2"/>
+                            <ListView Margin="10,37,10,10" Grid.ColumnSpan="2">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn Header="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_ListHead_Key}" Width="100"/>
+                                        <GridViewColumn Header="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_ListHead_Cmd}" Width="100"/>
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                            <Button Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_Add}" Margin="10,5,5,5" Grid.Row="1"/>
+                            <Button Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_ClearAll}" Margin="10,5,5,5" Grid.Row="2"/>
+                            <Button Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_Apply}" Margin="5,5,10,5" Grid.Row="2" Grid.Column="1"/>
+                            <Button Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_Delete}" Margin="5,5,10,5" Grid.Row="1" Grid.Column="1"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Grid.Column="1" Header="{x:Static res:Resources.MainWindow_CheatPage_BaseCheatFunc_Header}" Margin="10,0">
+                        <CheckBox Content="{x:Static res:Resources.MainWindow_CheatPage_BaseCheatFunc_ActivateCheat}" HorizontalAlignment="Left" Width="170" Margin="10,6,0,1"/>
+                    </GroupBox>
+                </Grid>
             </TabItem>
-            <Label Content="的撒了个大街上拉过多久啊来对抗冠军联赛开局的" Margin="268.322,179.444,0,0" HorizontalAlignment="Left" Width="270" VerticalAlignment="Top" Height="52.24"/>
         </TabControl>
 
     </Grid>
