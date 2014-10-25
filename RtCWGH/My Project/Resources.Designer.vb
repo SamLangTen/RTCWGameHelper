@@ -439,6 +439,195 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  查找类似 Other 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherHeader() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherHeader", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Config File 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_GameFunction_ConfigFile_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_GameFunction_ConfigFile_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Reset Config File 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_GameFunction_ConfigFile_Reset() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_GameFunction_ConfigFile_Reset", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 qagamex86.dll And cgamex86.dll 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_GameFunction_Dll_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_GameFunction_Dll_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 R_eset These Dll 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_GameFunction_Dll_Reset() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_GameFunction_Dll_Reset", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Game Function 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_GameFunction_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_GameFunction_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Another Setting 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_AnotherSetting() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_AnotherSetting", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Apply 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_Apply() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_Apply", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Fov value now is {0},Default is 90 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_Fov_Description() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_Fov_Description", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Fov 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_Fov_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_Fov_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Other Setting 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Main Setting 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_MainSetting() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_MainSetting", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Custom Resolution 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_Resolution_CustomResolution() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_Resolution_CustomResolution", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Resolution 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_Resolution_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_Resolution_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Get Now Resolution 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_Resolution_NowResolution() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_Resolution_NowResolution", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Internal Resolution 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_Resolution_UseInternalResolution() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_Resolution_UseInternalResolution", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Screenshot 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_Screenshot_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_Screenshot_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 JPEG Shot 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_Screenshot_JPEGDescription() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_Screenshot_JPEGDescription", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 TGA Shot 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_Screenshot_TGADescription() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_Screenshot_TGADescription", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Tip 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_Screenshot_Tip() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_Screenshot_Tip", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 F11 is default TGA screenshot key in RtCW. If you don&apos;t bind F11 on other command, RtCW will reset F11 as default TGA screenshot key. 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_OtherPage_OtherSetting_Screenshot_TipDescription() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_OtherPage_OtherSetting_Screenshot_TipDescription", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  查找类似 Saves 的本地化字符串。
         '''</summary>
         Public ReadOnly Property MainWindow_SaveHeader() As String

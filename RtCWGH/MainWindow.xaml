@@ -91,174 +91,174 @@
 
                 </Grid>
             </TabItem>
-			<TabItem Header="{x:Static res:Resources.MainWindow_SaveHeader}">
-				<Grid>
-					<Grid.RowDefinitions>
-						<RowDefinition Height="71"/>
-						<RowDefinition/>
-					</Grid.RowDefinitions>
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition/>
-						<ColumnDefinition Width="531"/>
-					</Grid.ColumnDefinitions>
-					<GroupBox Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Header}" Grid.RowSpan="2">
-						<Grid>
-							<Grid.ColumnDefinitions>
-								<ColumnDefinition Width="Auto"/>
-								<ColumnDefinition/>
-							</Grid.ColumnDefinitions>
-							<Grid.RowDefinitions>
-								<RowDefinition Height="30"/>
-								<RowDefinition/>
-							</Grid.RowDefinitions>
-							<RadioButton Content="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_MainSave}" Margin="0,5" IsChecked="True"/>
-							<RadioButton Content="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_AnotherSave}" Margin="5,5" Grid.Column="1"/>
-							<TabControl Grid.Row="1" Grid.ColumnSpan="2">
-								<TabItem Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_NormalSaves}">
-									<ListView>
-										<ListView.View>
-											<GridView>
-												<GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_ColSaveName}" />
-												<GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColTime}"/>
+            <TabItem Header="{x:Static res:Resources.MainWindow_SaveHeader}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="71"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="531"/>
+                    </Grid.ColumnDefinitions>
+                    <GroupBox Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Header}" Grid.RowSpan="2">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <RadioButton Content="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_MainSave}" Margin="0,5" IsChecked="True"/>
+                            <RadioButton Content="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_AnotherSave}" Margin="5,5" Grid.Column="1"/>
+                            <TabControl Grid.Row="1" Grid.ColumnSpan="2">
+                                <TabItem Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_NormalSaves}">
+                                    <ListView>
+                                        <ListView.View>
+                                            <GridView>
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_ColSaveName}" />
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColTime}"/>
                                                 <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColGameTime}"/>
                                                 <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColHeath}"/>
                                                 <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColMapName}"/>
-											</GridView>
-										</ListView.View>
-									</ListView>
-								</TabItem>
-								<TabItem Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_AutoSaves}">
-									<ListView>
-										<ListView.View>
-											<GridView>
-												<GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_ColSaveName}" />
-												<GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColTime}"/>
+                                            </GridView>
+                                        </ListView.View>
+                                    </ListView>
+                                </TabItem>
+                                <TabItem Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_AutoSaves}">
+                                    <ListView>
+                                        <ListView.View>
+                                            <GridView>
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_ColSaveName}" />
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColTime}"/>
                                                 <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColGameTime}"/>
                                                 <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColHeath}"/>
                                                 <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveMgr_ColMapName}"/>
-											</GridView>
-										</ListView.View>
-									</ListView>
-								</TabItem>
-							</TabControl>
-						</Grid>
-					</GroupBox>
+                                            </GridView>
+                                        </ListView.View>
+                                    </ListView>
+                                </TabItem>
+                            </TabControl>
+                        </Grid>
+                    </GroupBox>
                     <GroupBox Grid.Column="1" Header="{x:Static res:Resources.MainWindow_SavePage_LoadOrgMap_Header}" Margin="10,0,0,0">
-						<Grid>
-							<Grid.ColumnDefinitions>
-								<ColumnDefinition Width="Auto"/>
-								<ColumnDefinition/>
-								<ColumnDefinition Width="Auto"/>
-							</Grid.ColumnDefinitions>
-							<Label Content="{x:Static res:Resources.MainWindow_SavePage_LoadOrgMap_MapName}" Margin="0,10"></Label>
-							<ComboBox Grid.Column="1" Margin="10"></ComboBox>
-							<Button Content="{x:Static res:Resources.MainWindow_SavePage_LoadOrgMap_LoadButton}" Grid.Column="2" Margin="0,10" MinWidth="60"></Button>
-						</Grid>
-					</GroupBox>
-					<GroupBox Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Header}" Grid.Column="1" Grid.Row="1" Margin="10,0,0,0">
-						<Grid>
-							<Grid.ColumnDefinitions>
-								<ColumnDefinition Width="Auto"/>
-								<ColumnDefinition Width="Auto"/>
-								<ColumnDefinition Width="Auto"/>
-								<ColumnDefinition/>
-							</Grid.ColumnDefinitions>
-							<Grid.RowDefinitions>
-								<RowDefinition Height="Auto"/>
-								<RowDefinition Height="30"/>
-								<RowDefinition/>
-								<RowDefinition Height="Auto"/>
-							</Grid.RowDefinitions>
-							<Label Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Description}" Margin="10,5,10,5.749" Grid.ColumnSpan="4"/>
-							<RadioButton Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_MainSetting}" Grid.ColumnSpan="3" Margin="10,5,10,5" Grid.Row="1" IsChecked="True"/>
-							<RadioButton Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_AnotherSetting}" Grid.Column="3" Margin="10,5,10,5" Grid.Row="1"/>
-							<ListView Grid.ColumnSpan="4" Grid.Row="2" Margin="5,5,0,5">
-								<ListView.View>
-									<GridView>
-										<GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_ColSaveKey}"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="{x:Static res:Resources.MainWindow_SavePage_LoadOrgMap_MapName}" Margin="0,10"></Label>
+                            <ComboBox Grid.Column="1" Margin="10"></ComboBox>
+                            <Button Content="{x:Static res:Resources.MainWindow_SavePage_LoadOrgMap_LoadButton}" Grid.Column="2" Margin="0,10" MinWidth="60"></Button>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Header}" Grid.Column="1" Grid.Row="1" Margin="10,0,0,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Label Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Description}" Margin="10,5,10,5.749" Grid.ColumnSpan="4"/>
+                            <RadioButton Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_MainSetting}" Grid.ColumnSpan="3" Margin="10,5,10,5" Grid.Row="1" IsChecked="True"/>
+                            <RadioButton Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_AnotherSetting}" Grid.Column="3" Margin="10,5,10,5" Grid.Row="1"/>
+                            <ListView Grid.ColumnSpan="4" Grid.Row="2" Margin="5,5,0,5">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_ColSaveKey}"/>
                                         <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_ColLoadKey}"/>
                                         <GridViewColumn Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_ColSaveName}"/>
-									</GridView>
-								</ListView.View>
-							</ListView>
-							<Button Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Add}" Grid.Row="3" Margin="5,5,5,5" MinWidth="70"></Button>
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                            <Button Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Add}" Grid.Row="3" Margin="5,5,5,5" MinWidth="70"></Button>
                             <Button Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Delete}" Grid.Row="3" Grid.Column="1" Margin="5,5,5,5" MinWidth="70"></Button>
                             <Button Content="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Apply}" Grid.Row="3" Grid.Column="2" Margin="5,5,5,5" MinWidth="70"></Button>
-						</Grid>
-					</GroupBox>
-				</Grid>
-			</TabItem>
-			<TabItem Header="{x:Static res:Resources.MainWindow_ModHeader}">
-				<TabControl>
-					<TabItem Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_Header}">
-						<Grid>
-							<Grid.RowDefinitions>
-								<RowDefinition Height="97"/>
-								<RowDefinition Height="31"/>
-								<RowDefinition/>
-							</Grid.RowDefinitions>
-							<Grid.ColumnDefinitions>
-								<ColumnDefinition/>
-								<ColumnDefinition Width="376"/>
-							</Grid.ColumnDefinitions>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="{x:Static res:Resources.MainWindow_ModHeader}">
+                <TabControl>
+                    <TabItem Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_Header}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="97"/>
+                                <RowDefinition Height="31"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="376"/>
+                            </Grid.ColumnDefinitions>
                             <GroupBox Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_Header}" Grid.RowSpan="3">
-								<Grid>
-									<Grid.RowDefinitions>
-										<RowDefinition/>
-										<RowDefinition Height="30"/>
-									</Grid.RowDefinitions>
-									<ListView>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition Height="30"/>
+                                    </Grid.RowDefinitions>
+                                    <ListView>
                                         <ListView.ContextMenu>
                                             <ContextMenu>
                                                 <MenuItem Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_Install}"/>
                                                 <MenuItem Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_Uninstall}"/>
                                             </ContextMenu>
                                         </ListView.ContextMenu>
-										<ListView.View>
-											<GridView>
-												<GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_ColPK3Name}"/>
-												<GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_ColAddress}"/>
-												<GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_ColWay}"/>
-												<GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_ColMapCount}"/>
-											</GridView>
-										</ListView.View>
-									</ListView>
-									<Button Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_Refresh}" Margin="0,3,0,1" Grid.Row="1"></Button>
-								</Grid>
-							</GroupBox>
-							<GroupBox Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_ModMap_Header}" Margin="5,0,0,0" Grid.Column="1">
-								<Grid>
-									<Grid.ColumnDefinitions>
-										<ColumnDefinition Width="Auto"/>
-										<ColumnDefinition/>
-										<ColumnDefinition Width="Auto"/>
-									</Grid.ColumnDefinitions>
-									<Grid.RowDefinitions>
-										<RowDefinition Height="1*"/>
-										<RowDefinition Height="1*"/>
-									</Grid.RowDefinitions>
-									<Label Margin="0,7" Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_ModMap_MapName}" MinWidth="50"></Label>
-									<ComboBox Margin="0,7" Grid.Column="1"></ComboBox>
-									<Button Margin="5,7,5,7" Grid.Column="2" Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_ModMap_Load}" MinWidth="70"></Button>
-									<Button Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_ModMap_EnterModMenu}" Margin="5,7,5,7" Grid.ColumnSpan="3" Grid.Row="1"></Button>
-								</Grid>
-							</GroupBox>
-							<CheckBox Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_ActivateAutoReplacement}" Grid.Column="1" Grid.Row="1" Margin="7,7,0,0"></CheckBox>
-						</Grid>
-					</TabItem>
-					<TabItem Header="{x:Static res:Resources.MainWindow_ModPage_ResMod_Header}">
-						<Grid>
-							<Grid.ColumnDefinitions>
-								<ColumnDefinition Width="1*"/>
-								<ColumnDefinition Width="1*"/>
-							</Grid.ColumnDefinitions>
-							<GroupBox Header="{x:Static res:Resources.MainWindow_ModPage_ResMod_PK3List_Header}">
-								<Grid>
-									<Grid.RowDefinitions>
-										<RowDefinition Height="1*"/>
-										<RowDefinition Height="30"/>
-									</Grid.RowDefinitions>
-									<ListView>
+                                        <ListView.View>
+                                            <GridView>
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_ColPK3Name}"/>
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_ColAddress}"/>
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_ColWay}"/>
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_ColMapCount}"/>
+                                            </GridView>
+                                        </ListView.View>
+                                    </ListView>
+                                    <Button Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_Refresh}" Margin="0,3,0,1" Grid.Row="1"></Button>
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_ModMap_Header}" Margin="5,0,0,0" Grid.Column="1">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="1*"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Margin="0,7" Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_ModMap_MapName}" MinWidth="50"></Label>
+                                    <ComboBox Margin="0,7" Grid.Column="1"></ComboBox>
+                                    <Button Margin="5,7,5,7" Grid.Column="2" Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_ModMap_Load}" MinWidth="70"></Button>
+                                    <Button Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_ModMap_EnterModMenu}" Margin="5,7,5,7" Grid.ColumnSpan="3" Grid.Row="1"></Button>
+                                </Grid>
+                            </GroupBox>
+                            <CheckBox Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_ActivateAutoReplacement}" Grid.Column="1" Grid.Row="1" Margin="7,7,0,0"></CheckBox>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="{x:Static res:Resources.MainWindow_ModPage_ResMod_Header}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            <GroupBox Header="{x:Static res:Resources.MainWindow_ModPage_ResMod_PK3List_Header}">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="30"/>
+                                    </Grid.RowDefinitions>
+                                    <ListView>
                                         <ListView.ContextMenu>
                                             <ContextMenu>
                                                 <MenuItem Header="{x:Static res:Resources.MainWindow_ModPage_ResMod_PK3List_Install}"/>
@@ -266,19 +266,118 @@
                                             </ContextMenu>
                                         </ListView.ContextMenu>
                                         <ListView.View>
-											<GridView>
-												<GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_ResMod_PK3List_ColAddress}"/>
+                                            <GridView>
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_ResMod_PK3List_ColAddress}"/>
                                                 <GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_ResMod_PK3List_ColResType}"/>
-											</GridView>
-										</ListView.View>
-									</ListView>
-									<Button Content="{x:Static res:Resources.MainWindow_ModPage_ResMod_PK3List_Refresh}" Grid.Row="1" Margin="0,3,0,1"></Button>
-								</Grid>
-							</GroupBox>
-						</Grid>
-					</TabItem>
-				</TabControl>
-			</TabItem>
+                                            </GridView>
+                                        </ListView.View>
+                                    </ListView>
+                                    <Button Content="{x:Static res:Resources.MainWindow_ModPage_ResMod_PK3List_Refresh}" Grid.Row="1" Margin="0,3,0,1"></Button>
+                                </Grid>
+                            </GroupBox>
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+            </TabItem>
+            <TabItem Header="{x:Static res:Resources.MainWindow_OtherHeader}">
+                <TabControl>
+                    <TabItem Header="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_Header}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="35"/>
+                                <RowDefinition Height="120"/>
+                                <RowDefinition Height="93"/>
+                                <RowDefinition Height="203*"/>
+                                <RowDefinition Height="33*"/>
+                            </Grid.RowDefinitions>
+                            <WrapPanel Margin="0,7" UseLayoutRounding="False" Grid.ColumnSpan="3">
+                                <RadioButton Content="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_MainSetting}" Margin="5,0,0,0"/>
+                                <RadioButton Content="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_AnotherSetting}" Margin="5,0,0,0"/>
+                            </WrapPanel>
+
+                            <GroupBox Header="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_Resolution_Header}" Grid.Row="1">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="67*"/>
+                                        <ColumnDefinition Width="32*"/>
+                                        <ColumnDefinition Width="67*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="31"/>
+                                        <RowDefinition Height="35"/>
+                                        <RowDefinition Height="32"/>
+                                    </Grid.RowDefinitions>
+                                    <RadioButton Margin="5,7,0,7" Content="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_Resolution_UseInternalResolution}"/>
+                                    <ComboBox Grid.Column="1" Margin="5" Grid.ColumnSpan="4"></ComboBox>
+                                    <RadioButton Margin="5,7,0,7" Content="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_Resolution_CustomResolution}" Grid.Row="1"/>
+                                    <TextBox Text="d" Grid.Row="2" Grid.Column="1" Margin="5,7,5,3" MinWidth="40"></TextBox>
+                                    <TextBox Grid.Row="2" Grid.Column="3" Margin="5,7,5,3" MinWidth="40"></TextBox>
+                                    <Label Grid.Row="2" Grid.Column="2" Margin="5,7" Content="X"></Label>
+                                    <Button Grid.Row="2" Grid.Column="4" Margin="5" Content="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_Resolution_NowResolution}" MinWidth="100"></Button>
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Header="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_Fov_Header}" Grid.Column="1" Grid.Row="1" Margin="5,0,0,0">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="1*"/>
+                                    </Grid.RowDefinitions>
+                                    <Slider Margin="10,17.5,10,10"/>
+                                    <Label Content="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_Fov_Description}" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Center"/>
+
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Header="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_Screenshot_Header}" Grid.Row="2">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="89*"/>
+                                        <ColumnDefinition Width="143*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="1*"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Content="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_Screenshot_TGADescription}" Margin="0,5"></Label>
+                                    <Label Content="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_Screenshot_JPEGDescription}" Grid.Row="1" Margin="0,5"></Label>
+                                    <ComboBox Grid.Column="1" Margin="0,7,8,7" IsEditable="True"></ComboBox>
+                                    <ComboBox Grid.Column="1" Margin="0,7,5,7" IsEditable="True" Grid.Row="1" Grid.ColumnSpan="2"></ComboBox>
+                                    <Label Grid.Column="2" Margin="0,5" ToolTip="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_Screenshot_TipDescription}" Content="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_Screenshot_Tip}"></Label>
+                                </Grid>
+                            </GroupBox>
+                            <Button Content="{x:Static res:Resources.MainWindow_OtherPage_OtherSetting_Apply}" Grid.Column="2" Grid.Row="4" Margin="5,2"/>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="{x:Static res:Resources.MainWindow_OtherPage_GameFunction_Header}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="65*"/>
+                                <RowDefinition Height="419*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            <GroupBox Header="{x:Static res:Resources.MainWindow_OtherPage_GameFunction_ConfigFile_Header}">
+                                <Button Content="{x:Static res:Resources.MainWindow_OtherPage_GameFunction_ConfigFile_Reset}" Margin="5,7"></Button>
+                            </GroupBox>
+                            <GroupBox Header="{x:Static res:Resources.MainWindow_OtherPage_GameFunction_Dll_Header}" Grid.Column="1">
+                                <Grid>
+                                    <Button Content="{x:Static res:Resources.MainWindow_OtherPage_GameFunction_Dll_Reset}" Margin="5,7"></Button>
+                                </Grid>
+                            </GroupBox>
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+            </TabItem>
         </TabControl>
 
     </Grid>

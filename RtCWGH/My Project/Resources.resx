@@ -249,6 +249,69 @@ Two ways to install:
   <data name="MainWindow_ModPage_ResMod_PK3List_Uninstall" xml:space="preserve">
     <value>_Uninstall PK3</value>
   </data>
+  <data name="MainWindow_OtherHeader" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="MainWindow_OtherPage_GameFunction_ConfigFile_Header" xml:space="preserve">
+    <value>Config File</value>
+  </data>
+  <data name="MainWindow_OtherPage_GameFunction_ConfigFile_Reset" xml:space="preserve">
+    <value>_Reset Config File</value>
+  </data>
+  <data name="MainWindow_OtherPage_GameFunction_Dll_Header" xml:space="preserve">
+    <value>qagamex86.dll And cgamex86.dll</value>
+  </data>
+  <data name="MainWindow_OtherPage_GameFunction_Dll_Reset" xml:space="preserve">
+    <value>R_eset These Dll</value>
+  </data>
+  <data name="MainWindow_OtherPage_GameFunction_Header" xml:space="preserve">
+    <value>Game Function</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_AnotherSetting" xml:space="preserve">
+    <value>Another Setting</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Apply" xml:space="preserve">
+    <value>_Apply</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Fov_Description" xml:space="preserve">
+    <value>Fov value now is {0},Default is 90</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Fov_Header" xml:space="preserve">
+    <value>Fov</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Header" xml:space="preserve">
+    <value>Other Setting</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_MainSetting" xml:space="preserve">
+    <value>Main Setting</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Resolution_CustomResolution" xml:space="preserve">
+    <value>Custom Resolution</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Resolution_Header" xml:space="preserve">
+    <value>Resolution</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Resolution_NowResolution" xml:space="preserve">
+    <value>Get Now Resolution</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Resolution_UseInternalResolution" xml:space="preserve">
+    <value>Internal Resolution</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Screenshot_Header" xml:space="preserve">
+    <value>Screenshot</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Screenshot_JPEGDescription" xml:space="preserve">
+    <value>JPEG Shot</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Screenshot_TGADescription" xml:space="preserve">
+    <value>TGA Shot</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Screenshot_Tip" xml:space="preserve">
+    <value>Tip</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Screenshot_TipDescription" xml:space="preserve">
+    <value>F11 is default TGA screenshot key in RtCW. If you don't bind F11 on other command, RtCW will reset F11 as default TGA screenshot key.</value>
+  </data>
   <data name="MainWindow_SaveHeader" xml:space="preserve">
     <value>Saves</value>
   </data>

@@ -247,6 +247,69 @@
   <data name="MainWindow_ModPage_ResMod_PK3List_Uninstall" xml:space="preserve">
     <value>卸载PK3(_U)</value>
   </data>
+  <data name="MainWindow_OtherHeader" xml:space="preserve">
+    <value>其他设置</value>
+  </data>
+  <data name="MainWindow_OtherPage_GameFunction_ConfigFile_Header" xml:space="preserve">
+    <value>配置文件</value>
+  </data>
+  <data name="MainWindow_OtherPage_GameFunction_ConfigFile_Reset" xml:space="preserve">
+    <value>还原配置文件(_R)</value>
+  </data>
+  <data name="MainWindow_OtherPage_GameFunction_Dll_Header" xml:space="preserve">
+    <value>qagamex86.dll和cgamex86.dll</value>
+  </data>
+  <data name="MainWindow_OtherPage_GameFunction_Dll_Reset" xml:space="preserve">
+    <value>还原这两个Dll(_E)</value>
+  </data>
+  <data name="MainWindow_OtherPage_GameFunction_Header" xml:space="preserve">
+    <value>游戏功能</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_AnotherSetting" xml:space="preserve">
+    <value>其他功能</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Apply" xml:space="preserve">
+    <value>应用(_A)</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Fov_Description" xml:space="preserve">
+    <value>现在视场角为{0}，默认90</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Fov_Header" xml:space="preserve">
+    <value>视场角设置</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Header" xml:space="preserve">
+    <value>其他设置</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_MainSetting" xml:space="preserve">
+    <value>主程序设置</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Resolution_CustomResolution" xml:space="preserve">
+    <value>自定义分辨率</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Resolution_Header" xml:space="preserve">
+    <value>分辨率设置</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Resolution_NowResolution" xml:space="preserve">
+    <value>获取当前分辨率</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Resolution_UseInternalResolution" xml:space="preserve">
+    <value>使用内置分辨率</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Screenshot_Header" xml:space="preserve">
+    <value>截图键设置</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Screenshot_JPEGDescription" xml:space="preserve">
+    <value>JPEG截图键</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Screenshot_TGADescription" xml:space="preserve">
+    <value>TGA截图键</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Screenshot_Tip" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="MainWindow_OtherPage_OtherSetting_Screenshot_TipDescription" xml:space="preserve">
+    <value>RTCW会默认使用F11作为TGA截图键，如果TGA截图键留空而F11又未被其他命令所占用，那么运行游戏后，RTCW会将TGA截图键自动还原成F11。</value>
+  </data>
   <data name="MainWindow_SaveHeader" xml:space="preserve">
     <value>存档管理</value>
   </data>
