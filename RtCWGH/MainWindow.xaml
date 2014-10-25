@@ -5,7 +5,7 @@
     Title="RtCW Game Helper" Height="605.129" Width="801.429" Icon="0.ico">
     <Grid Background="DarkGray">
         <TabControl Margin="10">
-            <TabItem Header="开始">
+            <TabItem Header="{x:Static res:Resources.MainWindow_HomeHeader}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="493*"/>
@@ -24,7 +24,7 @@
                     <Label Content="{x:Static res:Resources.MainWindow_StartPage_ResetFolderNVersion}" Grid.Column="2" Grid.Row="1" Margin="0,0,0,0" Height="26" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="192" Cursor="Hand" FontStyle="Italic"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="作弊管理">
+            <TabItem Header="{x:Static res:Resources.MainWindow_CheatHeader}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="48"/>
@@ -41,13 +41,14 @@
                                 <ColumnDefinition Width="131*"/>
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
+                                <RowDefinition Height="34.991"/>
                                 <RowDefinition/>
                                 <RowDefinition Height="40"/>
                                 <RowDefinition Height="40"/>
                             </Grid.RowDefinitions>
-                            <RadioButton Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_MainSetting}" HorizontalAlignment="Left" Height="22" Margin="10,10,0,0" VerticalAlignment="Top" Width="96" IsChecked="True"/>
-                            <RadioButton Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_AnotherSetting}" HorizontalAlignment="Left" Height="22" Margin="111,10,0,0" VerticalAlignment="Top" Width="96" Grid.ColumnSpan="2"/>
-                            <ListView Margin="10,37,10,10" Grid.ColumnSpan="2">
+                            <RadioButton Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_MainSetting}" Margin="10,6,29.079,6.991" IsChecked="True"/>
+                            <RadioButton Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_AnotherSetting}" Margin="5,6,22.077,6.991" Grid.Column="1"/>
+                            <ListView Margin="10,2.24,10,10" Grid.ColumnSpan="2" Grid.Row="1">
                                 <ListView.View>
                                     <GridView>
                                         <GridViewColumn Header="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_ListHead_Key}" Width="100"/>
@@ -55,17 +56,20 @@
                                     </GridView>
                                 </ListView.View>
                             </ListView>
-                            <Button Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_Add}" Margin="10,5,5,5" Grid.Row="1"/>
-                            <Button Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_ClearAll}" Margin="10,5,5,5" Grid.Row="2"/>
-                            <Button Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_Apply}" Margin="5,5,10,5" Grid.Row="2" Grid.Column="1"/>
-                            <Button Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_Delete}" Margin="5,5,10,5" Grid.Row="1" Grid.Column="1"/>
+                            <Button Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_Add}" Margin="10,5,5,5" Grid.Row="2"/>
+                            <Button Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_ClearAll}" Margin="10,5,5,5" Grid.Row="3"/>
+                            <Button Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_Apply}" Margin="5,5,10,5" Grid.Row="3" Grid.Column="1"/>
+                            <Button Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_Delete}" Margin="5,5,10,5" Grid.Row="2" Grid.Column="1"/>
                         </Grid>
                     </GroupBox>
                     <GroupBox Grid.Column="1" Header="{x:Static res:Resources.MainWindow_CheatPage_BaseCheatFunc_Header}" Margin="10,0">
-                        <CheckBox Content="{x:Static res:Resources.MainWindow_CheatPage_BaseCheatFunc_ActivateCheat}" HorizontalAlignment="Left" Width="170" Margin="10,6,0,1"/>
+                        <CheckBox Content="{x:Static res:Resources.MainWindow_CheatPage_BaseCheatFunc_ActivateCheat}" Margin="10,6,-2,1"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
+			<TabItem Header="{x:Static res:Resources.MainWindow_LocalizedHeader}">
+				
+			</TabItem>
         </TabControl>
 
     </Grid>

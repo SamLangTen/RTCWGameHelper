@@ -117,6 +117,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="MainWindow_CheatHeader" xml:space="preserve">
+    <value>作弊管理</value>
+  </data>
+  <data name="MainWindow_CheatPage_BaseCheatFunc_ActivateCheat" xml:space="preserve">
+    <value>激活游戏作弊功能(_T)</value>
+  </data>
+  <data name="MainWindow_CheatPage_BaseCheatFunc_Header" xml:space="preserve">
+    <value>基本作弊功能</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_Add" xml:space="preserve">
+    <value>添加(_A)</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_AnotherSetting" xml:space="preserve">
+    <value>其他设置</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_Apply" xml:space="preserve">
+    <value>应用(_P)</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_ClearAll" xml:space="preserve">
+    <value>清除所有(_C)</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_Delete" xml:space="preserve">
+    <value>删除(_D)</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_Header" xml:space="preserve">
+    <value>作弊按键绑定</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_HeaderMain" xml:space="preserve">
+    <value>主程序</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_ListHead_Cmd" xml:space="preserve">
+    <value>作弊码</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_ListHead_Key" xml:space="preserve">
+    <value>绑定的按键</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_MainSetting" xml:space="preserve">
+    <value>主程序设置</value>
+  </data>
+  <data name="MainWindow_HomeHeader" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="MainWindow_LocalizedHeader" xml:space="preserve">
+    <value>汉化包管理</value>
+  </data>
   <data name="MainWindow_StartPage_Description" xml:space="preserve">
     <value>RtCW Game Helper是一个方便玩家游玩和管理重返德军总部(RtCW)的游戏助手。</value>
   </data>

@@ -117,6 +117,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="MainWindow_CheatHeader" xml:space="preserve">
+    <value>Cheat</value>
+  </data>
+  <data name="MainWindow_CheatPage_BaseCheatFunc_ActivateCheat" xml:space="preserve">
+    <value>Ac_tivate Base Cheating Function</value>
+  </data>
+  <data name="MainWindow_CheatPage_BaseCheatFunc_Header" xml:space="preserve">
+    <value>Cheating Function</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_Add" xml:space="preserve">
+    <value>_Add</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_AnotherSetting" xml:space="preserve">
+    <value>Another Setting</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_Apply" xml:space="preserve">
+    <value>A_pply</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_ClearAll" xml:space="preserve">
+    <value>_Clear All</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_Delete" xml:space="preserve">
+    <value>_Delete</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_Header" xml:space="preserve">
+    <value>Cheating Key Binding</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_HeaderMain" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_ListHead_Cmd" xml:space="preserve">
+    <value>Command</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_ListHead_Key" xml:space="preserve">
+    <value>Key</value>
+  </data>
+  <data name="MainWindow_CheatPage_BindCheatHotKey_MainSetting" xml:space="preserve">
+    <value>Main Setting</value>
+  </data>
+  <data name="MainWindow_HomeHeader" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="MainWindow_LocalizedHeader" xml:space="preserve">
+    <value>Chinese Localized(Only for China)</value>
+  </data>
   <data name="MainWindow_StartPage_Description" xml:space="preserve">
     <value>RtCW Game Helper is a game assistant for RtCW.With this assistant,all the players can play RtCW easilier.</value>
   </data>

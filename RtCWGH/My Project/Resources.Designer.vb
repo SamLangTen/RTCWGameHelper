@@ -61,6 +61,141 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  查找类似 Cheat 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_CheatHeader() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_CheatHeader", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Ac_tivate Base Cheating Function 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_CheatPage_BaseCheatFunc_ActivateCheat() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_CheatPage_BaseCheatFunc_ActivateCheat", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Cheating Function 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_CheatPage_BaseCheatFunc_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_CheatPage_BaseCheatFunc_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Add 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_CheatPage_BindCheatHotKey_Add() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_CheatPage_BindCheatHotKey_Add", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Another Setting 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_CheatPage_BindCheatHotKey_AnotherSetting() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_CheatPage_BindCheatHotKey_AnotherSetting", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 A_pply 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_CheatPage_BindCheatHotKey_Apply() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_CheatPage_BindCheatHotKey_Apply", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Clear All 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_CheatPage_BindCheatHotKey_ClearAll() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_CheatPage_BindCheatHotKey_ClearAll", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Delete 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_CheatPage_BindCheatHotKey_Delete() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_CheatPage_BindCheatHotKey_Delete", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Cheating Key Binding 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_CheatPage_BindCheatHotKey_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_CheatPage_BindCheatHotKey_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Main 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_CheatPage_BindCheatHotKey_HeaderMain() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_CheatPage_BindCheatHotKey_HeaderMain", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Command 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_CheatPage_BindCheatHotKey_ListHead_Cmd() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_CheatPage_BindCheatHotKey_ListHead_Cmd", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Key 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_CheatPage_BindCheatHotKey_ListHead_Key() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_CheatPage_BindCheatHotKey_ListHead_Key", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Main Setting 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_CheatPage_BindCheatHotKey_MainSetting() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_CheatPage_BindCheatHotKey_MainSetting", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Home 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_HomeHeader() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_HomeHeader", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Chinese Localized(Only for China) 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_LocalizedHeader() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_LocalizedHeader", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  查找类似 RtCW Game Helper is a game assistant for RtCW.With this assistant,all the players can play RtCW easilier. 的本地化字符串。
         '''</summary>
         Public ReadOnly Property MainWindow_StartPage_Description() As String
