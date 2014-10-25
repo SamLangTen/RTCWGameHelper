@@ -8,20 +8,24 @@
             <TabItem Header="{x:Static res:Resources.MainWindow_HomeHeader}">
                 <Grid>
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="87.022"/>
+                        <RowDefinition Height="159.039"/>
+                        <RowDefinition Height="52.013"/>
+                        <RowDefinition Height="33.008"/>
                         <RowDefinition/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition Width="379"/>
-                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Label Content="RtCW Game Helper" Margin="54.002,40,10.001,0" Width="314.998" FontSize="32" Height="51" VerticalAlignment="Top" HorizontalAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Auto" Grid.Column="1"/>
-                    <Image Margin="17.555,49,329.446,0" Source="0.ico" Stretch="Fill" Height="32" VerticalAlignment="Top" HorizontalAlignment="Center" Width="32" StretchDirection="UpOnly" Grid.Column="1"/>
-                    <TextBlock Text="{x:Static res:Resources.MainWindow_StartPage_Description}" TextWrapping="WrapWithOverflow" Height="70" Margin="54.294,96,21.295,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="303.412" Grid.Column="1"/>
-                    <TextBlock Text="{x:Static res:Resources.MainWindow_StartPage_FunctionDescription}" TextWrapping="WrapWithOverflow" Height="70" Margin="54.502,171,21.501,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="302.998" Grid.Column="1"/>
-                    <Button Content="{x:Static res:Resources.MainWindow_StartPage_StartGame}" HorizontalAlignment="Center" Margin="100,257,66,0" VerticalAlignment="Top" Width="213" Height="40" FontSize="16" Grid.Column="1"/>
-                    <Label Content="{x:Static res:Resources.MainWindow_StartPage_ResetFolderNVersion}" Grid.Column="2" Grid.Row="1" Margin="0,0,0,0" Height="26" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="192" Cursor="Hand" FontStyle="Italic"/>
+                    <Label Content="RtCW Game Helper" Margin="54.004,30,10.001,0" Width="314.996" FontSize="32" Height="51" VerticalAlignment="Top" HorizontalAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Auto" Grid.Column="1"/>
+                    <Image Margin="21.004,42.022,325.997,0" Source="0.ico" Stretch="Fill" Height="32" VerticalAlignment="Top" HorizontalAlignment="Center" Width="32" StretchDirection="UpOnly" Grid.Column="1"/>
+                    <TextBlock Text="{x:Static res:Resources.MainWindow_StartPage_Description}" TextWrapping="WrapWithOverflow" Height="70" Margin="54.294,9,21.295,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="303.412" Grid.Column="1" Grid.Row="1"/>
+                    <TextBlock Text="{x:Static res:Resources.MainWindow_StartPage_FunctionDescription}" TextWrapping="WrapWithOverflow" Height="70" Margin="54.502,84,21.501,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="302.998" Grid.Column="1" Grid.Row="1"/>
+                    <Button Content="{x:Static res:Resources.MainWindow_StartPage_StartGame}" HorizontalAlignment="Center" Margin="107.214,7.013,58.787,0" VerticalAlignment="Top" Width="213" Height="40" FontSize="16" Grid.Column="1" Grid.Row="2"/>
+                    <Label Content="{x:Static res:Resources.MainWindow_StartPage_ResetFolderNVersion}" Grid.Column="1" Margin="107.214,0,58.787,10" Height="23.008" VerticalAlignment="Bottom" Cursor="Hand" FontStyle="Italic" Grid.Row="3"/>
                 </Grid>
             </TabItem>
             <TabItem Header="{x:Static res:Resources.MainWindow_CheatHeader}">
@@ -94,8 +98,8 @@
 						<RowDefinition/>
 					</Grid.RowDefinitions>
 					<Grid.ColumnDefinitions>
-						<ColumnDefinition Width="232*"/>
-						<ColumnDefinition Width="531*"/>
+						<ColumnDefinition/>
+						<ColumnDefinition Width="531"/>
 					</Grid.ColumnDefinitions>
 					<GroupBox Header="{x:Static res:Resources.MainWindow_SavePage_SaveHotKey_Header}" Grid.RowSpan="2">
 						<Grid>
@@ -183,6 +187,97 @@
 						</Grid>
 					</GroupBox>
 				</Grid>
+			</TabItem>
+			<TabItem Header="{x:Static res:Resources.MainWindow_ModHeader}">
+				<TabControl>
+					<TabItem Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_Header}">
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="97"/>
+								<RowDefinition Height="31"/>
+								<RowDefinition/>
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition/>
+								<ColumnDefinition Width="376"/>
+							</Grid.ColumnDefinitions>
+                            <GroupBox Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_Header}" Grid.RowSpan="3">
+								<Grid>
+									<Grid.RowDefinitions>
+										<RowDefinition/>
+										<RowDefinition Height="30"/>
+									</Grid.RowDefinitions>
+									<ListView>
+                                        <ListView.ContextMenu>
+                                            <ContextMenu>
+                                                <MenuItem Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_Install}"/>
+                                                <MenuItem Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_Uninstall}"/>
+                                            </ContextMenu>
+                                        </ListView.ContextMenu>
+										<ListView.View>
+											<GridView>
+												<GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_ColPK3Name}"/>
+												<GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_ColAddress}"/>
+												<GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_ColWay}"/>
+												<GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_ColMapCount}"/>
+											</GridView>
+										</ListView.View>
+									</ListView>
+									<Button Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_PK3List_Refresh}" Margin="0,3,0,1" Grid.Row="1"></Button>
+								</Grid>
+							</GroupBox>
+							<GroupBox Header="{x:Static res:Resources.MainWindow_ModPage_MapMod_ModMap_Header}" Margin="5,0,0,0" Grid.Column="1">
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="Auto"/>
+										<ColumnDefinition/>
+										<ColumnDefinition Width="Auto"/>
+									</Grid.ColumnDefinitions>
+									<Grid.RowDefinitions>
+										<RowDefinition Height="1*"/>
+										<RowDefinition Height="1*"/>
+									</Grid.RowDefinitions>
+									<Label Margin="0,7" Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_ModMap_MapName}" MinWidth="50"></Label>
+									<ComboBox Margin="0,7" Grid.Column="1"></ComboBox>
+									<Button Margin="5,7,5,7" Grid.Column="2" Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_ModMap_Load}" MinWidth="70"></Button>
+									<Button Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_ModMap_EnterModMenu}" Margin="5,7,5,7" Grid.ColumnSpan="3" Grid.Row="1"></Button>
+								</Grid>
+							</GroupBox>
+							<CheckBox Content="{x:Static res:Resources.MainWindow_ModPage_MapMod_ActivateAutoReplacement}" Grid.Column="1" Grid.Row="1" Margin="7,7,0,0"></CheckBox>
+						</Grid>
+					</TabItem>
+					<TabItem Header="{x:Static res:Resources.MainWindow_ModPage_ResMod_Header}">
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="1*"/>
+								<ColumnDefinition Width="1*"/>
+							</Grid.ColumnDefinitions>
+							<GroupBox Header="{x:Static res:Resources.MainWindow_ModPage_ResMod_PK3List_Header}">
+								<Grid>
+									<Grid.RowDefinitions>
+										<RowDefinition Height="1*"/>
+										<RowDefinition Height="30"/>
+									</Grid.RowDefinitions>
+									<ListView>
+                                        <ListView.ContextMenu>
+                                            <ContextMenu>
+                                                <MenuItem Header="{x:Static res:Resources.MainWindow_ModPage_ResMod_PK3List_Install}"/>
+                                                <MenuItem Header="{x:Static res:Resources.MainWindow_ModPage_ResMod_PK3List_Uninstall}"/>
+                                            </ContextMenu>
+                                        </ListView.ContextMenu>
+                                        <ListView.View>
+											<GridView>
+												<GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_ResMod_PK3List_ColAddress}"/>
+                                                <GridViewColumn Header="{x:Static res:Resources.MainWindow_ModPage_ResMod_PK3List_ColResType}"/>
+											</GridView>
+										</ListView.View>
+									</ListView>
+									<Button Content="{x:Static res:Resources.MainWindow_ModPage_ResMod_PK3List_Refresh}" Grid.Row="1" Margin="0,3,0,1"></Button>
+								</Grid>
+							</GroupBox>
+						</Grid>
+					</TabItem>
+				</TabControl>
 			</TabItem>
         </TabControl>
 

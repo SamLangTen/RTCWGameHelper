@@ -241,6 +241,204 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  查找类似 Mod 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModHeader() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModHeader", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Replace qagamex86.dll And cgamex86.dll automatically 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_MapMod_ActivateAutoReplacement() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_MapMod_ActivateAutoReplacement", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Map Mod 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_MapMod_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_MapMod_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Run Mod Menu 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_MapMod_ModMap_EnterModMenu() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_MapMod_ModMap_EnterModMenu", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Maps 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_MapMod_ModMap_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_MapMod_ModMap_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Load 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_MapMod_ModMap_Load() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_MapMod_ModMap_Load", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Map Name 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_MapMod_ModMap_MapName() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_MapMod_ModMap_MapName", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 PK3 Address 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_MapMod_PK3List_ColAddress() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_MapMod_PK3List_ColAddress", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Map Count 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_MapMod_PK3List_ColMapCount() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_MapMod_PK3List_ColMapCount", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 PK3 Name 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_MapMod_PK3List_ColPK3Name() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_MapMod_PK3List_ColPK3Name", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Type 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_MapMod_PK3List_ColWay() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_MapMod_PK3List_ColWay", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 PK3 List 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_MapMod_PK3List_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_MapMod_PK3List_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Install PK3... 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_MapMod_PK3List_Install() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_MapMod_PK3List_Install", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Refresh 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_MapMod_PK3List_Refresh() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_MapMod_PK3List_Refresh", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Uninstall PK3 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_MapMod_PK3List_Uninstall() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_MapMod_PK3List_Uninstall", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Resource Mod 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_ResMod_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_ResMod_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 PK3 Address 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_ResMod_PK3List_ColAddress() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_ResMod_PK3List_ColAddress", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Resource Type 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_ResMod_PK3List_ColResType() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_ResMod_PK3List_ColResType", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 PK3 List 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_ResMod_PK3List_Header() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_ResMod_PK3List_Header", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Install PK3... 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_ResMod_PK3List_Install() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_ResMod_PK3List_Install", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Refresh 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_ResMod_PK3List_Refresh() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_ResMod_PK3List_Refresh", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Uninstall PK3 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property MainWindow_ModPage_ResMod_PK3List_Uninstall() As String
+            Get
+                Return ResourceManager.GetString("MainWindow_ModPage_ResMod_PK3List_Uninstall", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  查找类似 Saves 的本地化字符串。
         '''</summary>
         Public ReadOnly Property MainWindow_SaveHeader() As String

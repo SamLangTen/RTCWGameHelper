@@ -183,6 +183,72 @@ Two ways to install:
   <data name="MainWindow_LocalizedPage_Uninstall" xml:space="preserve">
     <value>_Uninstall</value>
   </data>
+  <data name="MainWindow_ModHeader" xml:space="preserve">
+    <value>Mod</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_ActivateAutoReplacement" xml:space="preserve">
+    <value>Replace qagamex86.dll And cgamex86.dll automatically</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_Header" xml:space="preserve">
+    <value>Map Mod</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_ModMap_EnterModMenu" xml:space="preserve">
+    <value>_Run Mod Menu</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_ModMap_Header" xml:space="preserve">
+    <value>Maps</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_ModMap_Load" xml:space="preserve">
+    <value>_Load</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_ModMap_MapName" xml:space="preserve">
+    <value>Map Name</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_ColAddress" xml:space="preserve">
+    <value>PK3 Address</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_ColMapCount" xml:space="preserve">
+    <value>Map Count</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_ColPK3Name" xml:space="preserve">
+    <value>PK3 Name</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_ColWay" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_Header" xml:space="preserve">
+    <value>PK3 List</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_Install" xml:space="preserve">
+    <value>_Install PK3...</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_Refresh" xml:space="preserve">
+    <value>_Refresh</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_Uninstall" xml:space="preserve">
+    <value>_Uninstall PK3</value>
+  </data>
+  <data name="MainWindow_ModPage_ResMod_Header" xml:space="preserve">
+    <value>Resource Mod</value>
+  </data>
+  <data name="MainWindow_ModPage_ResMod_PK3List_ColAddress" xml:space="preserve">
+    <value>PK3 Address</value>
+  </data>
+  <data name="MainWindow_ModPage_ResMod_PK3List_ColResType" xml:space="preserve">
+    <value>Resource Type</value>
+  </data>
+  <data name="MainWindow_ModPage_ResMod_PK3List_Header" xml:space="preserve">
+    <value>PK3 List</value>
+  </data>
+  <data name="MainWindow_ModPage_ResMod_PK3List_Install" xml:space="preserve">
+    <value>_Install PK3...</value>
+  </data>
+  <data name="MainWindow_ModPage_ResMod_PK3List_Refresh" xml:space="preserve">
+    <value>_Refresh</value>
+  </data>
+  <data name="MainWindow_ModPage_ResMod_PK3List_Uninstall" xml:space="preserve">
+    <value>_Uninstall PK3</value>
+  </data>
   <data name="MainWindow_SaveHeader" xml:space="preserve">
     <value>Saves</value>
   </data>

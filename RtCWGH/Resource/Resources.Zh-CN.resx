@@ -181,6 +181,72 @@
   <data name="MainWindow_LocalizedPage_Uninstall" xml:space="preserve">
     <value>卸载汉化包(_U)</value>
   </data>
+  <data name="MainWindow_ModHeader" xml:space="preserve">
+    <value>Mod管理</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_ActivateAutoReplacement" xml:space="preserve">
+    <value>启动qagamex86.dll和cgamex86.dll自动替换</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_Header" xml:space="preserve">
+    <value>关卡Mod管理</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_ModMap_EnterModMenu" xml:space="preserve">
+    <value>进入Mod游戏菜单(_M)</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_ModMap_Header" xml:space="preserve">
+    <value>地图</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_ModMap_Load" xml:space="preserve">
+    <value>加载(_L)</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_ModMap_MapName" xml:space="preserve">
+    <value>地图名</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_ColAddress" xml:space="preserve">
+    <value>PK3地址</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_ColMapCount" xml:space="preserve">
+    <value>地图数目</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_ColPK3Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_ColWay" xml:space="preserve">
+    <value>安装方式</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_Header" xml:space="preserve">
+    <value>PK3列表</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_Install" xml:space="preserve">
+    <value>安装PK3(_I)...</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_Refresh" xml:space="preserve">
+    <value>刷新(_R)</value>
+  </data>
+  <data name="MainWindow_ModPage_MapMod_PK3List_Uninstall" xml:space="preserve">
+    <value>卸载PK3(_U)</value>
+  </data>
+  <data name="MainWindow_ModPage_ResMod_Header" xml:space="preserve">
+    <value>资源Mod管理</value>
+  </data>
+  <data name="MainWindow_ModPage_ResMod_PK3List_ColAddress" xml:space="preserve">
+    <value>PK3地址</value>
+  </data>
+  <data name="MainWindow_ModPage_ResMod_PK3List_ColResType" xml:space="preserve">
+    <value>资源类型</value>
+  </data>
+  <data name="MainWindow_ModPage_ResMod_PK3List_Header" xml:space="preserve">
+    <value>PK3列表</value>
+  </data>
+  <data name="MainWindow_ModPage_ResMod_PK3List_Install" xml:space="preserve">
+    <value>安装PK3(_I)...</value>
+  </data>
+  <data name="MainWindow_ModPage_ResMod_PK3List_Refresh" xml:space="preserve">
+    <value>刷新(_R)</value>
+  </data>
+  <data name="MainWindow_ModPage_ResMod_PK3List_Uninstall" xml:space="preserve">
+    <value>卸载PK3(_U)</value>
+  </data>
   <data name="MainWindow_SaveHeader" xml:space="preserve">
     <value>存档管理</value>
   </data>
