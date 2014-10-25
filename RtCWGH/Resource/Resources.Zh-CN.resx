@@ -162,6 +162,25 @@
   <data name="MainWindow_LocalizedHeader" xml:space="preserve">
     <value>汉化包管理</value>
   </data>
+  <data name="MainWindow_LocalizedPage_Install" xml:space="preserve">
+    <value>安装汉化包(_I)</value>
+  </data>
+  <data name="MainWindow_LocalizedPage_LoadLocalizedPackage" xml:space="preserve">
+    <value>使用汉化包进行游戏(_L)</value>
+  </data>
+  <data name="MainWindow_LocalizedPage_LocalizedDescription" xml:space="preserve">
+    <value>汉化包由百度乐雨逍遥(http://hi.baidu.com/乐雨逍遥)制作，汉化包的所有权依然归其所有。
+
+汉化包只适用于原版RTCW游戏，在某些Mod关卡上使用可能会导致菜单错位。
+
+安装方式说明：
+“安装到Main文件夹” 即把汉化包安装到Main文件夹，根据RtCW的调用原理，程序会后读取汉化包里的内容，从而实现汉化。本方法无论是否使用本程序运行RtCW都生效，但可能会使得某些Mod的菜单错位，存档文件与RtCW原版相同。
+
+“安装到单独文件夹” 即像带文件夹的Mod关卡一样，安装到RtCW程序目录下一个单独的文件夹中，游戏时则按照使用带文件夹的Mod关卡一样读取汉化包，使游戏汉化。本方法不会使Mod关卡的菜单错位，存档文件与RtCW原版分离。</value>
+  </data>
+  <data name="MainWindow_LocalizedPage_Uninstall" xml:space="preserve">
+    <value>卸载汉化包(_U)</value>
+  </data>
   <data name="MainWindow_StartPage_Description" xml:space="preserve">
     <value>RtCW Game Helper是一个方便玩家游玩和管理重返德军总部(RtCW)的游戏助手。</value>
   </data>

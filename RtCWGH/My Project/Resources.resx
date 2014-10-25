@@ -162,6 +162,27 @@
   <data name="MainWindow_LocalizedHeader" xml:space="preserve">
     <value>Chinese Localized(Only for China)</value>
   </data>
+  <data name="MainWindow_LocalizedPage_Install" xml:space="preserve">
+    <value>_Install</value>
+  </data>
+  <data name="MainWindow_LocalizedPage_LoadLocalizedPackage" xml:space="preserve">
+    <value>_Load Localization Package</value>
+  </data>
+  <data name="MainWindow_LocalizedPage_LocalizedDescription" xml:space="preserve">
+    <value>Warning:This localization package is only used in China.
+
+The localization package is made by Leyuxiaoyao(http://hi.baidu.com/乐雨逍遥),Leyuxiaoyao All Right reserved.
+
+This package is only for Original RtCW Maps, none for Mods.
+
+Two ways to install:
+"Install into Main Folder", I will install the package into the Main Folder and RtCW will load the package Automatically. By this way,the package will be loaded all the time. Some mod menu will be of dislocation. Your saved files are in Main Folder.
+
+"Install into Single Map Folder", I will install the package into a single folder like those mods with a folder. You can avoid the dislocation of mod menu but the your saved files will be saved in the single folder instead Main.</value>
+  </data>
+  <data name="MainWindow_LocalizedPage_Uninstall" xml:space="preserve">
+    <value>_Uninstall</value>
+  </data>
   <data name="MainWindow_StartPage_Description" xml:space="preserve">
     <value>RtCW Game Helper is a game assistant for RtCW.With this assistant,all the players can play RtCW easilier.</value>
   </data>
