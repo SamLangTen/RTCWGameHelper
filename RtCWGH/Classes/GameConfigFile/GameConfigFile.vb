@@ -47,8 +47,8 @@ Public Class GameConfigFile
     ''' <summary>
     ''' Modify a key binding
     ''' </summary>
-    ''' <param name="Key">Key</param>
     ''' <param name="Command">Command</param>
+    ''' <param name="NewKey">Key</param>
     Public Sub ModifyBinding(Command As String, NewKey As String)
         DeleteBinding(Command)
         AddBinding(Command, NewKey)
