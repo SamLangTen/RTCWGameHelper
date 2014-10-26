@@ -344,7 +344,7 @@
     <value>删除(_D)</value>
   </data>
   <data name="MainWindow_SavePage_SaveHotKey_Description" xml:space="preserve">
-    <value>原始RtCW程式支持F5快存，你可以在這裏綁定更多熱鍵</value>
+    <value>原始RTCW程式支持F5快存，你可以在這裏綁定更多熱鍵</value>
   </data>
   <data name="MainWindow_SavePage_SaveHotKey_Header" xml:space="preserve">
     <value>存檔熱鍵設定</value>
@@ -383,7 +383,7 @@
     <value>普通存檔</value>
   </data>
   <data name="MainWindow_StartPage_Description" xml:space="preserve">
-    <value>RtCW Game Helper是一個方便玩家管理和游玩重返德軍總部(RtCW)的游戲助手。</value>
+    <value>RTCW Game Helper是一個方便玩家管理和游玩重返德軍總部(RTCW)的游戲助手。</value>
   </data>
   <data name="MainWindow_StartPage_FunctionDescription" xml:space="preserve">
     <value>本助手有以下功能：

@@ -218,10 +218,10 @@ Namespace My.Resources
         '''
         '''The localization package is made by Leyuxiaoyao(http://hi.baidu.com/乐雨逍遥),Leyuxiaoyao All Right reserved.
         '''
-        '''This package is only for Original RtCW Maps, none for Mods.
+        '''This package is only for Original RTCW Maps, none for Mods.
         '''
         '''Two ways to install:
-        '''&quot;Install into Main Folder&quot;, I will install the package into the Main Folder and RtCW will load the package Automatically. By this way,the package will be loaded all the time. Some mod menu will be of dislocation. Your saved files are in Main Folder.
+        '''&quot;Install into Main Folder&quot;, I will install the package into the Main Folder and RTCW will load the package Automatically. By this way,the package will be loaded all the time. Some mod menu will be of dislocation. Your saved files are in Main Folder.
         '''
         '''&quot;Inst [字符串的其余部分被截断]&quot;; 的本地化字符串。
         '''</summary>
@@ -727,7 +727,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  查找类似 In RtCW,you can save by F5 key. Now you can bind more auto saving key. 的本地化字符串。
+        '''  查找类似 In RTCW,you can save by F5 key. Now you can bind more auto saving key. 的本地化字符串。
         '''</summary>
         Public ReadOnly Property MainWindow_SavePage_SaveHotKey_Description() As String
             Get
@@ -844,7 +844,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  查找类似 RtCW Game Helper is a game assistant for RtCW.With this assistant,all the players can play RtCW easilier. 的本地化字符串。
+        '''  查找类似 RTCW Game Helper is a game assistant for RTCW.With this assistant,all the players can play RTCW easilier. 的本地化字符串。
         '''</summary>
         Public ReadOnly Property MainWindow_StartPage_Description() As String
             Get
