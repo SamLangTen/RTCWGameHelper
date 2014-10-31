@@ -78,6 +78,9 @@
     </Compile>
     <Compile Include="Classes\GameConfigFile\ConfigSetting.vb" />
     <Compile Include="Classes\GameConfigFile\GameConfigFile.vb" />
+    <Compile Include="Classes\GameProcess\GameArgument.vb" />
+    <Compile Include="Classes\GameProcess\GameCommonArgs.vb" />
+    <Compile Include="Classes\GameProcess\GameProcess.vb" />
     <Compile Include="ViewModels\CheatPageViewModel.vb" />
     <Compile Include="Views\MainWindow.xaml.vb">
       <DependentUpon>MainWindow.xaml</DependentUpon>
