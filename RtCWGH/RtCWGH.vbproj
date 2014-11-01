@@ -91,6 +91,7 @@
       <DependentUpon>Application.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Classes\CheatClass.vb" />
     <Compile Include="Classes\GameConfigFile\ConfigSetting.vb" />
     <Compile Include="Classes\GameConfigFile\GameConfigFile.vb" />
     <Compile Include="Classes\GameProcess\GameArgument.vb" />
