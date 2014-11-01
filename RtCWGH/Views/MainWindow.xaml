@@ -28,7 +28,7 @@
                     <Label Content="{x:Static res:Resources.MainWindow_StartPage_ResetFolderNVersion}" Grid.Column="1" Margin="107.214,0,58.787,10" Height="23.008" VerticalAlignment="Bottom" Cursor="Hand" FontStyle="Italic" Grid.Row="3"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="{x:Static res:Resources.MainWindow_CheatHeader}">
+            <TabItem x:Name="CheatPage" Header="{x:Static res:Resources.MainWindow_CheatHeader}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="48"/>
@@ -67,7 +67,7 @@
                         </Grid>
                     </GroupBox>
                     <GroupBox Grid.Column="1" Header="{x:Static res:Resources.MainWindow_CheatPage_BaseCheatFunc_Header}" Margin="10,0">
-                        <CheckBox Content="{x:Static res:Resources.MainWindow_CheatPage_BaseCheatFunc_ActivateCheat}" Margin="10,6,-2,1"/>
+                        <CheckBox IsChecked="{Binding IsActivatedCheatMode}" Content="{x:Static res:Resources.MainWindow_CheatPage_BaseCheatFunc_ActivateCheat}" Margin="10,6,-2,1"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
