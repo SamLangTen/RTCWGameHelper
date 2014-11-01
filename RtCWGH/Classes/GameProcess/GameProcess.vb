@@ -14,6 +14,9 @@ Public Class GameProcess
         End Get
     End Property
 
+    ''' <summary>
+    ''' Add an argument to ArgumentList
+    ''' </summary>
     Public Shared Sub AddArgument(arg As GameArgument)
         Select Case arg.OrderType
             Case ArgumentOrder.Anywhere
@@ -36,9 +39,6 @@ Public Class GameProcess
                     RealArguments.Insert(last + 1, arg)
                 Else
                     RealArguments.Insert(arg.Order - 1, arg)
-                    For i As Integer = arg.Order To last Step 1
-                        RealArguments(i).Order = i + 1
-                    Next
                 End If
             Case ArgumentOrder.FromLast
                 'Similar with the previous
@@ -49,19 +49,26 @@ Public Class GameProcess
                     RealArguments.Insert(first - 1, arg)
                 Else
                     RealArguments.Insert(RealArguments.Count - arg.Order + 1, arg)
-                    For i As Integer = first To RealArguments.Count - arg.Order Step 1
-                        RealArguments(i).Order = totalArg.Count() - (i - (RealArguments.Count() - totalArg.Count()))
-                    Next
                 End If
         End Select
+        SortArguments()
+
     End Sub
 
+    ''' <summary>
+    ''' Remove an argument from ArgumentList
+    ''' </summary>
     Public Shared Sub DeleteArgument(arg As GameArgument)
-
+        RealArguments.Remove(RealArguments.Where(Function(r) r.ArgumentString = arg.ArgumentString))
+        SortArguments()
     End Sub
 
+    ''' <summary>
+    ''' Remove an argument from ArgumentList
+    ''' </summary>
     Public Shared Sub DeleteArgument(argString As String)
-
+        RealArguments.Remove(RealArguments.Where(Function(r) r.ArgumentString = argString))
+        SortArguments()
     End Sub
 
     ''' <summary>
@@ -100,6 +107,24 @@ Public Class GameProcess
     Public Shared Event GameHasExited()
 
     ''' <summary>
+    ''' Sort all arguments order by their settings.
+    ''' </summary>
+    Private Shared Sub SortArguments()
+        'From First Item
+        Dim last As Integer = RealArguments.LastIndexOf(RealArguments.LastOrDefault(Function(r) r.OrderType = ArgumentOrder.FromFirst))
+        Dim first As Integer = RealArguments.IndexOf(RealArguments.FirstOrDefault(Function(r) r.OrderType = ArgumentOrder.FromLast))
+        For i As Integer = 0 To last Step 1
+            RealArguments(i).Order = i + 1
+        Next
+        For i As Integer = first To RealArguments.Count Step 1
+            RealArguments(i).Order = RealArguments.Count - i
+        Next
+        For i As Integer = last + 1 To first - 1 Step 1
+            RealArguments(i).Order = 0
+        Next
+    End Sub
+
+    ''' <summary>
     ''' The storage of arguments
     ''' </summary>
     Private Shared Property RealArguments As New List(Of GameArgument)
@@ -107,19 +132,29 @@ Public Class GameProcess
     ''' <summary>
     ''' How the arguments will be used.
     ''' </summary>
-    Private Shared Property GameMode As GameRunningMode = GameRunningMode.BothPerAndTemp
+    Private Shared Property GameMode As GameRunningMode = GameRunningMode.PermanentArgs + GameRunningMode.TemporaryArgs
 
     ''' <summary>
     ''' Background Method of game running.
     ''' </summary>
     Private Shared Sub RunGameBackground()
-
+        Dim p As New Process()
+        p.StartInfo.FileName = RTCWPath + "/wolfsp.exe"
+        p.StartInfo.Arguments = String.Join(" ", (From k In RealArguments Where GameMode.HasFlag(k.ArgType) Select k.ArgumentString))
+        p.StartInfo.UseShellExecute = False
+        p.StartInfo.WorkingDirectory = RTCWPath
+        RaiseEvent BeforeGameRun()
+        p.Start()
+        RaiseEvent GameHasRun()
+        p.WaitForExit()
+        RealArguments = RealArguments.Where(Function(r) r.ArgType = ArgumentType.Permanent).ToList()
+        SortArguments()
+        RaiseEvent GameHasExited()
     End Sub
 End Class
 
 Public Enum GameRunningMode
-    OnlyPermanentArgs
-    OnlyTemporaryArgs
-    BothPerAndTemp
-    NoArgs
+    PermanentArgs = 1
+    TemporaryArgs = 2
+    NoArgs = 4
 End Enum
