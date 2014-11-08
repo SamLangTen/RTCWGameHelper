@@ -5,12 +5,21 @@ Imports GalaSoft.MvvmLight.Messaging
 Public Class CheatPageViewModel
     Implements INotifyPropertyChanged
 
+    Sub New()
+        ReadConfigFile()
+    End Sub
 
 
     Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 
     Private rtcwConfigFile As String = GameProcess.RTCWPath + "\main\wolfconfig.cfg"
+    Private rtcwCheatClass As CheatClass
     Private _IsActivatedCheatMode As Boolean
+
+    Private Sub ReadConfigFile()
+        rtcwCheatClass = New CheatClass(rtcwConfigFile)
+        Me.CheatCodeList = rtcwCheatClass.CheatCodes.ToList()
+    End Sub
 
     Public Property IsActivatedCheatMode As Boolean
         Set(value As Boolean)
@@ -24,14 +33,19 @@ Public Class CheatPageViewModel
 
     Public Property SetMainCFG As ICommand = New RelayCommand(Sub()
                                                                   Me.rtcwConfigFile = GameProcess.RTCWPath + "\main\wolfconfig.cfg"
+                                                                  ReadConfigFile()
                                                                   RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs("SelectMainCFG"))
                                                               End Sub)
 
     Public Property SetOtherCFG As ICommand = New RelayCommand(Sub()
                                                                    Messenger.Default.Send(Of CommonDialogMessage(Of OpenFileDialogDto))(New CommonDialogMessage(Of OpenFileDialogDto)(New OpenFileDialogDto() With {.Filter = "RTCW配置文件(wolfconfig.cfg)|wolfconfig.cfg"}, Sub(m)
-                                                                                                                                                                                                                                                                              If m.DialogResult = True Then Me.rtcwConfigFile = m.Filename
+                                                                                                                                                                                                                                                                              If m.DialogResult = True Then
+                                                                                                                                                                                                                                                                                  Me.rtcwConfigFile = m.Filename
+                                                                                                                                                                                                                                                                                  ReadConfigFile()
+                                                                                                                                                                                                                                                                              End If
+
                                                                                                                                                                                                                                                                           End Sub))
-                                                                   RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs("SelectOtherCFG"))
+                                                                   RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs("SelectOtherCFG"))  
                                                                End Sub)
 
     Public Property SelectMainCFG As Boolean
@@ -52,4 +66,14 @@ Public Class CheatPageViewModel
         End Get
     End Property
 
+    Private _CheatCodeList As New List(Of RtCWConfigBind)
+    Public Property CheatCodeList As List(Of RtCWConfigBind)
+        Set(value As List(Of RtCWConfigBind))
+            _CheatCodeList = value
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs("CheatCodeList"))
+        End Set
+        Get
+            Return _CheatCodeList
+        End Get
+    End Property
 End Class
