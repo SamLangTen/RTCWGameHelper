@@ -52,6 +52,24 @@ Partial Friend NotInheritable Class MySettings
             Return defaultInstance
         End Get
     End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("K:\Game For Windows\RTCW")>  _
+    Public ReadOnly Property RTCWPath() As String
+        Get
+            Return CType(Me("RTCWPath"),String)
+        End Get
+    End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("ORG")>  _
+    Public ReadOnly Property RTCWVer() As String
+        Get
+            Return CType(Me("RTCWVer"),String)
+        End Get
+    End Property
 End Class
 
 Namespace My

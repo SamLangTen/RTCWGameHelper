@@ -74,7 +74,7 @@ Public Class GameProcess
     ''' <summary>
     ''' The Path of RTCW,not main folder.
     ''' </summary>
-    Public Shared Property RTCWPath As String
+    Public Shared Property RTCWPath As String = My.Settings.RTCWPath
 
     ''' <summary>
     ''' Some flags about this version of RTCW,such as (ani,noani)
