@@ -83,6 +83,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Views\KeyBindingEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -100,6 +104,9 @@
     <Compile Include="ViewModels\CheatPageViewModel.vb" />
     <Compile Include="ViewModels\Dialogs\CommonDialogMessage.vb" />
     <Compile Include="ViewModels\Dialogs\OpenFileDialogHelper.vb" />
+    <Compile Include="Views\KeyBindingEditor.xaml.vb">
+      <DependentUpon>KeyBindingEditor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainWindow.xaml.vb">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

@@ -61,6 +61,51 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  查找类似 C_ancel 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property KeyBindingEditor_Cancel() As String
+            Get
+                Return ResourceManager.GetString("KeyBindingEditor_Cancel", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Command 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property KeyBindingEditor_Command() As String
+            Get
+                Return ResourceManager.GetString("KeyBindingEditor_Command", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _Key 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property KeyBindingEditor_Key() As String
+            Get
+                Return ResourceManager.GetString("KeyBindingEditor_Key", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 _OK 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property KeyBindingEditor_OK() As String
+            Get
+                Return ResourceManager.GetString("KeyBindingEditor_OK", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 Key-Binding Editor 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property KeyBindingEditor_Title() As String
+            Get
+                Return ResourceManager.GetString("KeyBindingEditor_Title", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  查找类似 Cheat 的本地化字符串。
         '''</summary>
         Public ReadOnly Property MainWindow_CheatHeader() As String

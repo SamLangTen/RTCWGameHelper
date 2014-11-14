@@ -76,4 +76,8 @@ Public Class CheatPageViewModel
             Return _CheatCodeList
         End Get
     End Property
+
+    Public Property AddCheatCode As ICommand = New RelayCommand(Sub()
+
+                                                                End Sub)
 End Class
