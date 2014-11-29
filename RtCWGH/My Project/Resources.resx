@@ -414,4 +414,10 @@ Mod Manager...</value>
   <data name="MainWindow_StartPage_StartGame" xml:space="preserve">
     <value>_Start Game</value>
   </data>
+  <data name="Msg_Done" xml:space="preserve">
+    <value>Done!</value>
+  </data>
+  <data name="Msg_Error" xml:space="preserve">
+    <value>An error occured:</value>
+  </data>
 </root>

@@ -32,7 +32,7 @@ Public Class GameConfigFile
     ''' </summary>
     ''' <param name="Command">Command</param>
     Public Sub DeleteBinding(Command As String)
-        Me.ConfigBind.Remove(Me.ConfigBind.Where(Function(r) r.Command.ToLower = Command.ToLower))
+        Me.ConfigBind.Remove(Me.ConfigBind.SingleOrDefault(Function(r) r.Command.ToLower = Command.ToLower))
     End Sub
 
     ''' <summary>

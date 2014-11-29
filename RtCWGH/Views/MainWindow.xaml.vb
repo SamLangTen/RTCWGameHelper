@@ -12,18 +12,9 @@ Public Class MainWindow
         Me.CheatPage.DataContext = New CheatPageViewModel()
 
         'Open File Dialog
-        Messenger.Default.Register(Of CommonDialogMessage(Of OpenFileDialogDto))(Me, Sub(m)
-                                                                                         Dim open As New OpenFileDialog
-                                                                                         open.Filter = m.Content.Filter
-                                                                                         open.Title = m.Content.Title
-                                                                                         If open.ShowDialog().Value = True Then
-                                                                                             m.Content.Filename = open.FileName
-                                                                                             m.Content.DialogResult = True
-                                                                                         Else
-                                                                                             m.Content.DialogResult = False
-                                                                                         End If
-                                                                                         m.ProcessCallback(m.Content)
-                                                                                     End Sub)
+        Messenger.Default.Register(Of NotificationMessage)(Me, "msg", Sub(M)
+                                                                          MessageBox.Show(M.Notification(0), "RTCW Game Helper")
+                                                                      End Sub)
     End Sub
 
 

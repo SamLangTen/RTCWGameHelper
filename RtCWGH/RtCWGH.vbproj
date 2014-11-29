@@ -102,8 +102,6 @@
     <Compile Include="Classes\GameProcess\GameCommonArgs.vb" />
     <Compile Include="Classes\GameProcess\GameProcess.vb" />
     <Compile Include="ViewModels\CheatPageViewModel.vb" />
-    <Compile Include="ViewModels\Dialogs\CommonDialogMessage.vb" />
-    <Compile Include="ViewModels\Dialogs\OpenFileDialogHelper.vb" />
     <Compile Include="ViewModels\KeyBindingEditorViewModel.vb" />
     <Compile Include="Views\KeyBindingEditor.xaml.vb">
       <DependentUpon>KeyBindingEditor.xaml</DependentUpon>

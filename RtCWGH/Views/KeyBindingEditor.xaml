@@ -20,8 +20,8 @@
         <Label Content="{x:Static res:Resources.KeyBindingEditor_Command}" Grid.Row="1" Margin="3,7,3,7"></Label>
         <ComboBox ItemsSource="{Binding KeyLists}" SelectedItem="{Binding SelectedKey}" Grid.Column="1" Grid.ColumnSpan="3" Margin="3,7,3,7"></ComboBox>
         <ComboBox ItemsSource="{Binding CommandLists}" SelectedItem="{Binding SelectedCommand}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Margin="3,7,3,7"></ComboBox>
-        <Button  Content="{x:Static res:Resources.KeyBindingEditor_OK}" Grid.Column="2" Margin="3,5,3,5" Grid.Row="2"/>
-        <Button  Content="{x:Static res:Resources.KeyBindingEditor_Cancel}" Grid.Column="3" Margin="3,5,3,5" Grid.Row="2"/>
+        <Button x:Name="OK" Content="{x:Static res:Resources.KeyBindingEditor_OK}" Grid.Column="2" Margin="3,5,3,5" Grid.Row="2"/>
+        <Button x:Name="Cancel" Content="{x:Static res:Resources.KeyBindingEditor_Cancel}" Grid.Column="3" Margin="3,5,3,5" Grid.Row="2"/>
 
     </Grid>
 </Window>

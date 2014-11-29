@@ -5,6 +5,10 @@ Imports GalaSoft.MvvmLight.Messaging
 Public Class KeyBindingEditorViewModel
     Implements INotifyPropertyChanged
 
+    Sub New(CommandList As List(Of String))
+        Me.CommandLists = CommandList
+    End Sub
+
     Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 
     Private _CommandLists As New List(Of String)

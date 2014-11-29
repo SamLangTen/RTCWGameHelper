@@ -926,5 +926,23 @@ Namespace My.Resources
                 Return ResourceManager.GetString("MainWindow_StartPage_StartGame", resourceCulture)
             End Get
         End Property
+        
+        '''<summary>
+        '''  查找类似 Done! 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property Msg_Done() As String
+            Get
+                Return ResourceManager.GetString("Msg_Done", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找类似 An error occured: 的本地化字符串。
+        '''</summary>
+        Public ReadOnly Property Msg_Error() As String
+            Get
+                Return ResourceManager.GetString("Msg_Error", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace
