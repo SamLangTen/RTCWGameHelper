@@ -117,11 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="KeyBindingEditor_Cancel" xml:space="preserve">
+    <value>取消(_A)</value>
+  </data>
   <data name="KeyBindingEditor_Command" xml:space="preserve">
     <value>命令(_C)</value>
   </data>
   <data name="KeyBindingEditor_Key" xml:space="preserve">
     <value>按键(_K)</value>
+  </data>
+  <data name="KeyBindingEditor_OK" xml:space="preserve">
+    <value>确定(_O)</value>
   </data>
   <data name="KeyBindingEditor_Title" xml:space="preserve">
     <value>按键绑定编辑器</value>
