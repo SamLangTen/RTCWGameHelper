@@ -104,6 +104,7 @@
     <Compile Include="ViewModels\CheatPageViewModel.vb" />
     <Compile Include="ViewModels\Dialogs\CommonDialogMessage.vb" />
     <Compile Include="ViewModels\Dialogs\OpenFileDialogHelper.vb" />
+    <Compile Include="ViewModels\KeyBindingEditorViewModel.vb" />
     <Compile Include="Views\KeyBindingEditor.xaml.vb">
       <DependentUpon>KeyBindingEditor.xaml</DependentUpon>
     </Compile>
