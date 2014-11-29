@@ -19,6 +19,7 @@ Public Class CheatPageViewModel
 
     Private Sub ReadConfigFile()
         rtcwCheatClass = New CheatClass(rtcwConfigFile)
+        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs("CheatCodeList"))
     End Sub
 
 #Region "Bindings"
@@ -49,19 +50,13 @@ Public Class CheatPageViewModel
                                                                    End If
                                                                End Sub)
 
-    Public Property SelectMainCFG As Boolean
-        Set(value As Boolean)
-
-        End Set
+    Public ReadOnly Property SelectMainCFG As Boolean
         Get
             Return New FileInfo(rtcwConfigFile).FullName = New FileInfo(GameProcess.RTCWPath + "\main\wolfconfig.cfg").FullName
         End Get
     End Property
 
-    Public Property SelectOtherCFG As Boolean
-        Set(value As Boolean)
-
-        End Set
+    Public ReadOnly Property SelectOtherCFG As Boolean
         Get
             Return New FileInfo(rtcwConfigFile).FullName <> New FileInfo(GameProcess.RTCWPath + "\main\wolfconfig.cfg").FullName
         End Get

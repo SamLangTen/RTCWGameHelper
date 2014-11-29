@@ -50,8 +50,8 @@
                                 <RowDefinition Height="40"/>
                                 <RowDefinition Height="40"/>
                             </Grid.RowDefinitions>
-                            <RadioButton Command="{Binding SetMainCFG}" IsChecked="{Binding SelectMainCFG }" Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_MainSetting}" Margin="10,6,29,6"/>
-                            <RadioButton Command="{Binding SetOtherCFG}" IsChecked="{Binding SelectOtherCFG }" Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_AnotherSetting}" Margin="5,6,29,6" Grid.Column="1"/>
+                            <RadioButton Command="{Binding SetMainCFG}" IsChecked="{Binding SelectMainCFG,Mode=OneWay}" Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_MainSetting}" Margin="10,6,29,6"/>
+                            <RadioButton Command="{Binding SetOtherCFG}" IsChecked="{Binding SelectOtherCFG,Mode=OneWay}" Content="{x:Static res:Resources.MainWindow_CheatPage_BindCheatHotKey_AnotherSetting}" Margin="5,6,29,6" Grid.Column="1"/>
                             <ListView Margin="10,2.24,10,10" Grid.ColumnSpan="2" Grid.Row="1" ItemsSource="{Binding CheatCodeList}" SelectedItem="{Binding SelectedCheatCode}">
                                 <ListView.View>
                                     <GridView>
