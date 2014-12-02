@@ -55,13 +55,12 @@ Public Class CheatPageViewModel
     ''' Set other cfg user selected as config file
     ''' </summary>
     Public Property SetOtherCFG As ICommand = New RelayCommand(Sub()
-                                                                   Dim open As New OpenFileDialog
-                                                                   open.Filter = "RTCW配置文件(wolfconfig.cfg)|wolfconfig.cfg"
-                                                                   If open.ShowDialog().Value = True Then
-                                                                       Me.rtcwConfigFile = open.FileName
+                                                                   Dim ri = DialogInteraction.ShowOpenFileDialog("RTCW配置文件(wolfconfig.cfg)|wolfconfig.cfg")
+                                                                   If ri.Result = True Then
+                                                                       Me.rtcwConfigFile = ri.Filename
                                                                        rtcwCheatClass = New CheatClass(rtcwConfigFile)
-                                                                       Raise("IsSelectedOtherCFG", "CheatCodeList")
                                                                    End If
+                                                                   Raise("IsSelectedOtherCFG", "IsSelectedMainCFG", "CheatCodeList")
                                                                End Sub)
     ''' <summary>
     ''' If reading main cfg content
