@@ -2,10 +2,10 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="MySettings" UseMySettingsClassName="true">
   <Profiles />
   <Settings>
-    <Setting Name="RTCWPath" Type="System.String" Scope="Application">
+    <Setting Name="RTCWPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">K:\Game For Windows\RTCW</Value>
     </Setting>
-    <Setting Name="RTCWVer" Type="System.String" Scope="Application">
+    <Setting Name="RTCWVer" Type="System.String" Scope="User">
       <Value Profile="(Default)">ORG</Value>
     </Setting>
   </Settings>
