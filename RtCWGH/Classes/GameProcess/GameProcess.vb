@@ -10,7 +10,11 @@ Public Class GameProcess
     ''' </summary>
     Public Shared ReadOnly Property Arguments As GameArgument()
         Get
-            Return RealArguments.ToArray()
+            Dim raF = From i In GameProcess.RealArgumentsFromFirst
+            Dim raA = From i In GameProcess.RealArgumentsAnywhere
+            Dim raL = From i In GameProcess.RealArgumentsFromLast
+            raL.Reverse()
+            Return raF.Union(raA).Union(raL)
         End Get
     End Property
 
@@ -18,39 +22,18 @@ Public Class GameProcess
     ''' Add an argument to ArgumentList
     ''' </summary>
     Public Shared Sub AddArgument(arg As GameArgument)
+        Dim realArguments
         Select Case arg.OrderType
             Case ArgumentOrder.Anywhere
-                'If order type of arg is anywhere,it will be inserted into the list and its location is between FromFirst and FromLast
-                Dim i As Integer
-                If RealArguments.SingleOrDefault(Function(r) r.OrderType = ArgumentOrder.FromFirst) IsNot Nothing Then
-                    i = RealArguments.LastIndexOf(RealArguments.LastOrDefault(Function(r) r.OrderType = ArgumentOrder.FromFirst))
-                Else
-                    i = 0
-                End If
-                RealArguments.Insert(i + 1, arg)
+                realArguments = GameProcess.RealArgumentsAnywhere
             Case ArgumentOrder.FromFirst
-                'First,we have to check out whether there are more than "order" items.
-                'If its count is more than "order" item,we must insert it into list as the "order" item.
-                'If not,we insert it into the list as the last one of the FromFirst
-                Dim totalArg = RealArguments.Where(Function(r) r.OrderType = ArgumentOrder.FromFirst)
-                Dim last As Integer = RealArguments.LastIndexOf(RealArguments.LastOrDefault(Function(r) r.OrderType = ArgumentOrder.FromFirst))
-                If totalArg.Count < arg.Order Then
-                    arg.Order = totalArg.Count + 1
-                    RealArguments.Insert(last + 1, arg)
-                Else
-                    RealArguments.Insert(arg.Order - 1, arg)
-                End If
+                realArguments = GameProcess.RealArgumentsFromFirst
             Case ArgumentOrder.FromLast
-                'Similar with the previous
-                Dim totalArg = RealArguments.Where(Function(r) r.OrderType = ArgumentOrder.FromLast)
-                Dim first As Integer = RealArguments.IndexOf(RealArguments.FirstOrDefault(Function(r) r.OrderType = ArgumentOrder.FromLast))
-                If totalArg.Count < arg.Order Then
-                    arg.Order = totalArg.Count + 1
-                    RealArguments.Insert(first - 1, arg)
-                Else
-                    RealArguments.Insert(RealArguments.Count - arg.Order + 1, arg)
-                End If
+                realArguments = GameProcess.RealArgumentsFromLast
+            Case Else
+                realArguments = GameProcess.RealArgumentsAnywhere
         End Select
+        If arg.Order > realArguments.Count Then realArguments.Add(arg) Else realArguments.Insert(arg.Order - 1, arg)
         SortArguments()
 
     End Sub
@@ -59,7 +42,18 @@ Public Class GameProcess
     ''' Remove an argument from ArgumentList
     ''' </summary>
     Public Shared Sub DeleteArgument(arg As GameArgument)
-        RealArguments.Remove(RealArguments.Where(Function(r) r.ArgumentString = arg.ArgumentString))
+        If RealArgumentsAnywhere.SingleOrDefault(Function(r) r.ArgumentString = arg.ArgumentString) IsNot Nothing Then
+            RealArgumentsAnywhere.Remove(RealArgumentsAnywhere.SingleOrDefault(Function(r) r.ArgumentString = arg.ArgumentString))
+            Exit Sub
+        End If
+        If RealArgumentsFromFirst.SingleOrDefault(Function(r) r.ArgumentString = arg.ArgumentString) IsNot Nothing Then
+            RealArgumentsFromFirst.Remove(RealArgumentsFromFirst.SingleOrDefault(Function(r) r.ArgumentString = arg.ArgumentString))
+            Exit Sub
+        End If
+        If RealArgumentsFromLast.SingleOrDefault(Function(r) r.ArgumentString = arg.ArgumentString) IsNot Nothing Then
+            RealArgumentsFromLast.Remove(RealArgumentsFromLast.SingleOrDefault(Function(r) r.ArgumentString = arg.ArgumentString))
+            Exit Sub
+        End If
         SortArguments()
     End Sub
 
@@ -67,7 +61,18 @@ Public Class GameProcess
     ''' Remove an argument from ArgumentList
     ''' </summary>
     Public Shared Sub DeleteArgument(argString As String)
-        RealArguments.Remove(RealArguments.Where(Function(r) r.ArgumentString = argString))
+        If RealArgumentsAnywhere.SingleOrDefault(Function(r) r.ArgumentString = argString) IsNot Nothing Then
+            RealArgumentsAnywhere.Remove(RealArgumentsAnywhere.SingleOrDefault(Function(r) r.ArgumentString = argString))
+            Exit Sub
+        End If
+        If RealArgumentsFromFirst.SingleOrDefault(Function(r) r.ArgumentString = argString) IsNot Nothing Then
+            RealArgumentsFromFirst.Remove(RealArgumentsFromFirst.SingleOrDefault(Function(r) r.ArgumentString = argString))
+            Exit Sub
+        End If
+        If RealArgumentsFromLast.SingleOrDefault(Function(r) r.ArgumentString = argString) IsNot Nothing Then
+            RealArgumentsFromLast.Remove(RealArgumentsFromLast.SingleOrDefault(Function(r) r.ArgumentString = argString))
+            Exit Sub
+        End If
         SortArguments()
     End Sub
 
@@ -110,24 +115,29 @@ Public Class GameProcess
     ''' Sort all arguments order by their settings.
     ''' </summary>
     Private Shared Sub SortArguments()
-        'From First Item
-        Dim last As Integer = RealArguments.LastIndexOf(RealArguments.LastOrDefault(Function(r) r.OrderType = ArgumentOrder.FromFirst))
-        Dim first As Integer = RealArguments.IndexOf(RealArguments.FirstOrDefault(Function(r) r.OrderType = ArgumentOrder.FromLast))
-        For i As Integer = 0 To last Step 1
-            RealArguments(i).Order = i + 1
+        For i As Integer = 1 To GameProcess.RealArgumentsAnywhere.Count Step 1
+            GameProcess.RealArgumentsAnywhere(i - 1).Order = i
         Next
-        For i As Integer = first To RealArguments.Count Step 1
-            RealArguments(i).Order = RealArguments.Count - i
+        For i As Integer = 1 To GameProcess.RealArgumentsFromFirst.Count Step 1
+            GameProcess.RealArgumentsFromFirst(i - 1).Order = i
         Next
-        For i As Integer = last + 1 To first - 1 Step 1
-            RealArguments(i).Order = 0
+        For i As Integer = 1 To GameProcess.RealArgumentsFromLast.Count Step 1
+            GameProcess.RealArgumentsFromLast(i - 1).Order = i
         Next
     End Sub
 
     ''' <summary>
-    ''' The storage of arguments
+    ''' The storage of arguments(From First)
     ''' </summary>
-    Private Shared Property RealArguments As New List(Of GameArgument)
+    Private Shared Property RealArgumentsFromFirst As New List(Of GameArgument)
+    ''' <summary>
+    ''' The storage of arguments(Anywhere)
+    ''' </summary>
+    Private Shared Property RealArgumentsAnywhere As New List(Of GameArgument)
+    ''' <summary>
+    ''' The storage of arguments(From Last)
+    ''' </summary>
+    Private Shared Property RealArgumentsFromLast As New List(Of GameArgument)
 
     ''' <summary>
     ''' How the arguments will be used.
@@ -140,14 +150,16 @@ Public Class GameProcess
     Private Shared Sub RunGameBackground()
         Dim p As New Process()
         p.StartInfo.FileName = RTCWPath + "/wolfsp.exe"
-        p.StartInfo.Arguments = String.Join(" ", (From k In RealArguments Where GameMode.HasFlag(k.ArgType) Select k.ArgumentString))
+        p.StartInfo.Arguments = String.Join(" ", (From k In GameProcess.RealArgumentsFromFirst Where GameMode.HasFlag(k.ArgType) Select k.ArgumentString)) + " " + String.Join(" ", (From k In GameProcess.RealArgumentsAnywhere Where GameMode.HasFlag(k.ArgType) Select k.ArgumentString)) + " " + String.Join(" ", (From k In GameProcess.RealArgumentsFromLast Where GameMode.HasFlag(k.ArgType) Select k.ArgumentString))
         p.StartInfo.UseShellExecute = False
         p.StartInfo.WorkingDirectory = RTCWPath
         RaiseEvent BeforeGameRun()
         p.Start()
         RaiseEvent GameHasRun()
         p.WaitForExit()
-        RealArguments = RealArguments.Where(Function(r) r.ArgType = ArgumentType.Permanent).ToList()
+        GameProcess.RealArgumentsFromFirst = GameProcess.RealArgumentsFromFirst.Where(Function(r) r.ArgType = ArgumentType.Permanent).ToList()
+        GameProcess.RealArgumentsAnywhere = GameProcess.RealArgumentsAnywhere.Where(Function(r) r.ArgType = ArgumentType.Permanent).ToList()
+        GameProcess.RealArgumentsFromLast = GameProcess.RealArgumentsFromLast.Where(Function(r) r.ArgType = ArgumentType.Permanent).ToList()
         SortArguments()
         RaiseEvent GameHasExited()
     End Sub

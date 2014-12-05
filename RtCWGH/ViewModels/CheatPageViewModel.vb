@@ -37,6 +37,13 @@ Public Class CheatPageViewModel
     Public Property IsActivatedCheatMode As Boolean
         Set(value As Boolean)
             Me._IsActivatedCheatMode = value
+            'Enable/Disable cheat mode
+            If Me._IsActivatedCheatMode = True Then
+                GameProcess.AddArgument(New GameArgument(ArgumentType.Permanent, ArgumentOrder.FromLast, 1, GameCommonArgs.EnableCheatMode))
+            Else
+                GameProcess.DeleteArgument(GameCommonArgs.EnableCheatMode)
+            End If
+            'Raise Event
             Raise("IsActivatedCheatMode")
         End Set
         Get

@@ -18,7 +18,7 @@ Public Class GameArgument
         'Replace {0},{1}..... with real arguments
         Dim argText As String = OriginalArgumentString
         If Args IsNot Nothing Then
-            For i As Integer = 0 To Args.Length Step 1
+            For i As Integer = 0 To Args.Length - 1 Step 1
                 argText = argText.Replace("{" + i.ToString() + "}", Args(i))
             Next
         End If
