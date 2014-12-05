@@ -1,110 +1,112 @@
 ﻿Imports System.IO
 Imports System.Text
-''' <summary>
-''' Used to modify RtCW Game Config File(wolfconfig.cfg)
-''' </summary>
-''' <remarks>
-''' In config file of RtCW,there are two types of settings.
-''' 1.Starting with "bind",with a keycode and a command,means a key binding.
-''' 2.Starting with "seta",with a setting key and its value,means a setting.
-''' </remarks>
-Public Class GameConfigFile
-
-    Private _Filename As String = ""
-
-    Private Sub ReadConfigFile()
-        Dim lines = File.ReadAllLines(_Filename)
-        Me.ConfigSeta = (From n In lines Where (n.Contains("seta")) Select New RtCWConfigSeta(n)).ToList()
-        Me.ConfigBind = (From n In lines Where (n.Contains("bind") And (Not n = "unbindall")) Select New RtCWConfigBind(n)).ToList()
-    End Sub
-
+Namespace Game
     ''' <summary>
-    ''' Create a Game Config File reference from a file.
+    ''' Used to modify RtCW Game Config File(wolfconfig.cfg)
     ''' </summary>
-    ''' <param name="Filename">RtCW Config File</param>
-    Sub New(Filename As String)
-        _Filename = Filename
-        Me.ReadConfigFile()
-    End Sub
+    ''' <remarks>
+    ''' In config file of RtCW,there are two types of settings.
+    ''' 1.Starting with "bind",with a keycode and a command,means a key binding.
+    ''' 2.Starting with "seta",with a setting key and its value,means a setting.
+    ''' </remarks>
+    Public Class GameConfigFile
 
-    ''' <summary>
-    ''' Delete a key binding
-    ''' </summary>
-    ''' <param name="Command">Command</param>
-    Public Sub DeleteBinding(Command As String)
-        Me.ConfigBind.Remove(Me.ConfigBind.SingleOrDefault(Function(r) r.Command.ToLower = Command.ToLower))
-    End Sub
+        Private _Filename As String = ""
 
-    ''' <summary>
-    ''' Add a key binding
-    ''' </summary>
-    ''' <param name="Command">Command</param>
-    ''' <param name="Key">Key</param>
-    Public Sub AddBinding(Command As String, Key As String)
-        Dim orgBinding = Me.ConfigBind.FirstOrDefault(Function(r) r.Command.ToLower = Command.ToLower)
-        If orgBinding Is Nothing Then Me.ConfigBind.Add(New RtCWConfigBind(Key, Command))
-    End Sub
+        Private Sub ReadConfigFile()
+            Dim lines = File.ReadAllLines(_Filename)
+            Me.ConfigSeta = (From n In lines Where (n.Contains("seta")) Select New RtCWConfigSeta(n)).ToList()
+            Me.ConfigBind = (From n In lines Where (n.Contains("bind") And (Not n = "unbindall")) Select New RtCWConfigBind(n)).ToList()
+        End Sub
 
-    ''' <summary>
-    ''' Modify a key binding
-    ''' </summary>
-    ''' <param name="Command">Command</param>
-    ''' <param name="NewKey">Key</param>
-    Public Sub ModifyBinding(Command As String, NewKey As String)
-        DeleteBinding(Command)
-        AddBinding(Command, NewKey)
-    End Sub
+        ''' <summary>
+        ''' Create a Game Config File reference from a file.
+        ''' </summary>
+        ''' <param name="Filename">RtCW Config File</param>
+        Sub New(Filename As String)
+            _Filename = Filename
+            Me.ReadConfigFile()
+        End Sub
 
-    ''' <summary>
-    ''' Delete a setting item
-    ''' </summary>
-    ''' <param name="Key">Key name of setting</param>
-    Public Sub DeleteSetting(Key As String)
-        Me.ConfigSeta.Remove(Me.ConfigSeta.Where(Function(r) r.Key.ToLower = Key.ToLower))
-    End Sub
+        ''' <summary>
+        ''' Delete a key binding
+        ''' </summary>
+        ''' <param name="Command">Command</param>
+        Public Sub DeleteBinding(Command As String)
+            Me.ConfigBind.Remove(Me.ConfigBind.SingleOrDefault(Function(r) r.Command.ToLower = Command.ToLower))
+        End Sub
 
-    ''' <summary>
-    ''' Add a setting item
-    ''' </summary>
-    ''' <param name="Key">Key name of setting</param>
-    ''' <param name="Value">value of setting</param>
-    ''' <remarks></remarks>
-    Public Sub AddSetting(Key As String, Value As String)
-        Dim orgSetting = Me.ConfigSeta.FirstOrDefault(Function(r) r.Key.ToLower = Key.ToLower)
-        If orgSetting Is Nothing Then Me.ConfigSeta.Add(New RtCWConfigSeta(Key, Value))
-    End Sub
+        ''' <summary>
+        ''' Add a key binding
+        ''' </summary>
+        ''' <param name="Command">Command</param>
+        ''' <param name="Key">Key</param>
+        Public Sub AddBinding(Command As String, Key As String)
+            Dim orgBinding = Me.ConfigBind.FirstOrDefault(Function(r) r.Command.ToLower = Command.ToLower)
+            If orgBinding Is Nothing Then Me.ConfigBind.Add(New RtCWConfigBind(Key, Command))
+        End Sub
 
-    ''' <summary>
-    ''' Modify a setting item
-    ''' </summary>
-    ''' <param name="Key">Key name of setting</param>
-    ''' <param name="NewValue">New value of setting</param>
-    ''' <remarks></remarks>
-    Public Sub ModifySetting(Key As String, NewValue As String)
-        DeleteBinding(Key)
-        AddBinding(Key, NewValue)
-    End Sub
+        ''' <summary>
+        ''' Modify a key binding
+        ''' </summary>
+        ''' <param name="Command">Command</param>
+        ''' <param name="NewKey">Key</param>
+        Public Sub ModifyBinding(Command As String, NewKey As String)
+            DeleteBinding(Command)
+            AddBinding(Command, NewKey)
+        End Sub
 
-    ''' <summary>
-    ''' Write all setting to file
-    ''' </summary>
-    Public Sub SaveConfigFile()
-        Dim fileContents As String = "//generated by RTCW, modified by RTCW Game Helper"
-        Dim nextline As String = Encoding.ASCII.GetChars({10})
-        fileContents += "unbindall"
-        fileContents += nextline + String.Join(nextline, (From k In Me.ConfigBind Select "bind " + k.Key + " """ + k.Command + """"))
-        fileContents += nextline + String.Join(nextline, (From k In Me.ConfigSeta Select "seta " + k.Key + " """ + k.Value + """"))
-        File.WriteAllText(_Filename, fileContents)
-    End Sub
+        ''' <summary>
+        ''' Delete a setting item
+        ''' </summary>
+        ''' <param name="Key">Key name of setting</param>
+        Public Sub DeleteSetting(Key As String)
+            Me.ConfigSeta.Remove(Me.ConfigSeta.Where(Function(r) r.Key.ToLower = Key.ToLower))
+        End Sub
 
-    ''' <summary>
-    ''' A Storage of Setting.
-    ''' </summary>
-    Public Property ConfigSeta As New List(Of RtCWConfigSeta)
+        ''' <summary>
+        ''' Add a setting item
+        ''' </summary>
+        ''' <param name="Key">Key name of setting</param>
+        ''' <param name="Value">value of setting</param>
+        ''' <remarks></remarks>
+        Public Sub AddSetting(Key As String, Value As String)
+            Dim orgSetting = Me.ConfigSeta.FirstOrDefault(Function(r) r.Key.ToLower = Key.ToLower)
+            If orgSetting Is Nothing Then Me.ConfigSeta.Add(New RtCWConfigSeta(Key, Value))
+        End Sub
 
-    ''' <summary>
-    ''' A Storage of Key Binding
-    ''' </summary>
-    Public Property ConfigBind As New List(Of RtCWConfigBind)
+        ''' <summary>
+        ''' Modify a setting item
+        ''' </summary>
+        ''' <param name="Key">Key name of setting</param>
+        ''' <param name="NewValue">New value of setting</param>
+        ''' <remarks></remarks>
+        Public Sub ModifySetting(Key As String, NewValue As String)
+            DeleteBinding(Key)
+            AddBinding(Key, NewValue)
+        End Sub
 
-End Class
+        ''' <summary>
+        ''' Write all setting to file
+        ''' </summary>
+        Public Sub SaveConfigFile()
+            Dim fileContents As String = "//generated by RTCW, modified by RTCW Game Helper"
+            Dim nextline As String = Encoding.ASCII.GetChars({10})
+            fileContents += "unbindall"
+            fileContents += nextline + String.Join(nextline, (From k In Me.ConfigBind Select "bind " + k.Key + " """ + k.Command + """"))
+            fileContents += nextline + String.Join(nextline, (From k In Me.ConfigSeta Select "seta " + k.Key + " """ + k.Value + """"))
+            File.WriteAllText(_Filename, fileContents)
+        End Sub
+
+        ''' <summary>
+        ''' A Storage of Setting.
+        ''' </summary>
+        Public Property ConfigSeta As New List(Of RtCWConfigSeta)
+
+        ''' <summary>
+        ''' A Storage of Key Binding
+        ''' </summary>
+        Public Property ConfigBind As New List(Of RtCWConfigBind)
+
+    End Class
+End Namespace

@@ -3,6 +3,8 @@ Imports System.IO
 Imports GalaSoft.MvvmLight.Command
 Imports GalaSoft.MvvmLight.Messaging
 Imports Microsoft.Win32
+Imports RtCWGH.Game
+
 Public Class CheatPageViewModel
     Implements INotifyPropertyChanged
 

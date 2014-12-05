@@ -101,6 +101,7 @@
     <Compile Include="Classes\GameProcess\GameArgument.vb" />
     <Compile Include="Classes\GameProcess\GameCommonArgs.vb" />
     <Compile Include="Classes\GameProcess\GameProcess.vb" />
+    <Compile Include="Classes\PK3Manager\PK3Manager.vb" />
     <Compile Include="ViewModels\CheatPageViewModel.vb" />
     <Compile Include="ViewModels\DialogHelper\DialogDelegate.vb" />
     <Compile Include="ViewModels\DialogHelper\DialogInteraction.vb" />
