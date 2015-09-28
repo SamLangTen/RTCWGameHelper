@@ -6,7 +6,7 @@
       <Value Profile="(Default)">ORG</Value>
     </Setting>
     <Setting Name="RTCWPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">K:\Game For Windows\RTCW</Value>
+      <Value Profile="(Default)">I:\Game For Windows\RTCW</Value>
     </Setting>
   </Settings>
 </SettingsFile>

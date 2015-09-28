@@ -1,5 +1,6 @@
 ﻿Imports System.Text.RegularExpressions
 Imports System.IO
+Imports System.Text
 Namespace Game
     ''' <summary>
     ''' PK3 manager for RTCW
@@ -44,11 +45,30 @@ Namespace Game
             Dim pk3File As New MapPK3File() With {.PK3Filename = PK3Filename,
                                           .Maps = (From i In bspCollection Select New RTCWMapInfo With {.MapName = Path.GetFileNameWithoutExtension(i), .PK3Filename = PK3Filename})
             }
-            'Sort it!
+            'Sort
             If IsSort = True Then
-
+                Dim bspFileCollection = ZipHelper.Decompress(pk3File.PK3Filename, "", ({".*\.bsp"}).ToList())
+                Dim bspMapCollection = bspFileCollection.Select(Function(z) New bspSortingHelper() With {.CurrentBsp = Path.GetFileNameWithoutExtension(z.Filename), .NextBsp = New Regex("(?<=changelevel\s)[^\s]*").Match(Encoding.ASCII.GetChars(z.Data)).Value})
+                Dim sortedMaps As New List(Of RTCWMapInfo)
+                While True
+                    Dim latestMap As bspSortingHelper
+                    'sort end by end
+                    latestMap = bspMapCollection.Where(Function(m) m.NextBsp.ToLower = If(sortedMaps.Count = 0, "gamefinished", sortedMaps(0).MapName.ToLower)).SingleOrDefault()
+                    If latestMap Is Nothing Then Exit While
+                    sortedMaps.Insert(0, pk3File.Maps.Where(Function(m) m.MapName = latestMap.CurrentBsp).SingleOrDefault)
+                End While
+                pk3File.Maps = sortedMaps
             End If
             Return pk3File
         End Function
+
+        ''' <summary>
+        ''' Used to storage data while sorting
+        ''' </summary>
+        Private Class bspSortingHelper
+            Property CurrentBsp As String
+            Property NextBsp As String
+        End Class
+
     End Class
 End Namespace
