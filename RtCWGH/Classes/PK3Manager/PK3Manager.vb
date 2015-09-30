@@ -53,7 +53,17 @@ Namespace Game
                 While True
                     Dim latestMap As bspSortingHelper
                     'sort end by end
-                    latestMap = bspMapCollection.Where(Function(m) m.NextBsp.ToLower = If(sortedMaps.Count = 0, "gamefinished", sortedMaps(0).MapName.ToLower)).SingleOrDefault()
+                    If (sortedMaps.Count = 0) Then
+                        'The last map must link to "gamefinished"
+                        'Or link to a map which don't belong to this pk3
+                        'e.g.: Mod "Fast_NewPharao" will link to RTCW XLab after you finished the last map
+
+                        'Particularly,there are more than one map which links to gamefinished,but one of them won't be loaded by other maps
+                        'This complicated code aims to solve problems above.
+                        latestMap = bspMapCollection.Where(Function(m) (m.NextBsp.ToLower = "gamefinished" Or bspMapCollection.Where(Function(n) n.CurrentBsp = m.NextBsp).Count = 0) And ((bspMapCollection.Where(Function(n) n.NextBsp = m.CurrentBsp).Count <> 0) Or （bspMapCollection.Count = 1))).SingleOrDefault()
+                    Else
+                        latestMap = bspMapCollection.Where(Function(m) m.NextBsp.ToLower = sortedMaps(0).MapName.ToLower).SingleOrDefault()
+                    End If
                     If latestMap Is Nothing Then Exit While
                     sortedMaps.Insert(0, pk3File.Maps.Where(Function(m) m.MapName = latestMap.CurrentBsp).SingleOrDefault)
                 End While
