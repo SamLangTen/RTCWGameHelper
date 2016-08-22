@@ -27,7 +27,7 @@
         End Sub
 
         Public Overrides Function ToString() As String
-            Return "bind " + Me.Key + " """ + Me.Command + """"
+            Return $"bind {Me.Key} ""{Me.Command}"""
         End Function
     End Class
 
@@ -59,7 +59,7 @@
         End Sub
 
         Public Overrides Function ToString() As String
-            Return "seta " + Me.Key + " """ + Me.Value + """"
+            Return $"seta {Me.Key} ""{Me.Value }"""
         End Function
 
     End Class

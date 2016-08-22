@@ -150,7 +150,10 @@ Namespace Game
         Private Shared Sub RunGameBackground()
             Dim p As New Process()
             p.StartInfo.FileName = RTCWPath + "/wolfsp.exe"
-            p.StartInfo.Arguments = String.Join(" ", (From k In GameProcess.RealArgumentsFromFirst Where GameMode.HasFlag(k.ArgType) Select k.ArgumentString)) + " " + String.Join(" ", (From k In GameProcess.RealArgumentsAnywhere Where GameMode.HasFlag(k.ArgType) Select k.ArgumentString)) + " " + String.Join(" ", (From k In GameProcess.RealArgumentsFromLast Where GameMode.HasFlag(k.ArgType) Select k.ArgumentString))
+            Dim aF As String = String.Join(" ", GameProcess.RealArgumentsFromFirst.Where(Function(k) GameMode.HasFlag(k.ArgType)).Select(Function(k) k.ArgumentString))
+            Dim aA As String = String.Join(" ", GameProcess.RealArgumentsAnywhere.Where(Function(k) GameMode.HasFlag(k.ArgType)).Select(Function(k) k.ArgumentString))
+            Dim aL As String = String.Join(" ", GameProcess.RealArgumentsFromLast.Where(Function(k) GameMode.HasFlag(k.ArgType)).Select(Function(k) k.ArgumentString).Reverse())
+            p.StartInfo.Arguments = $"{aF} {aA} {aL}"
             p.StartInfo.UseShellExecute = False
             p.StartInfo.WorkingDirectory = RTCWPath
             RaiseEvent BeforeGameRun()
