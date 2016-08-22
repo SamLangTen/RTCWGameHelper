@@ -41,9 +41,12 @@ Namespace Game
         ''' <param name="IsSort">If sort maps by playing order.</param>
         Public Shared Function LoadPK3Maps(PK3Filename As String, IsSort As Boolean) As MapPK3File
             'Get bsp file
-            Dim bspCollection = (From f In ZipHelper.ViewZipFile(PK3Filename) Where Path.GetExtension(f).ToLower = ".bsp")
+            Dim bspCollection = ZipHelper.ViewZipFile(PK3Filename).Where(Function(f) Path.GetExtension(f).ToLower = ".bsp")
+            'Get ui file
+            Dim uiCollection = ZipHelper.ViewZipFile(PK3Filename).Where(Function(f) Path.GetExtension(f).ToLower = ".menu").Select(Function(f) Path.GetFileNameWithoutExtension(f))
             Dim pk3File As New MapPK3File() With {.PK3Filename = PK3Filename,
-                                          .Maps = (From i In bspCollection Select New RTCWMapInfo With {.MapName = Path.GetFileNameWithoutExtension(i), .PK3Filename = PK3Filename})
+            .Maps = bspCollection.Select(Function(i) New RTCWMapInfo() With {.MapName = Path.GetFileNameWithoutExtension(i), .PK3Filename = PK3Filename}),
+            .CustomMenus = uiCollection
             }
             'Sort
             If IsSort = True Then
@@ -77,7 +80,14 @@ Namespace Game
         ''' </summary>
         ''' <param name="IsSort">If sort maps by playing order.</param>
         Public Shared Function GetAllMapPK3Files(IsSort As Boolean) As List(Of MapPK3File)
+            Throw New NotImplementedException()
+        End Function
 
+        ''' <summary>
+        ''' Search and load all resource pk3 in game path
+        ''' </summary>
+        Public Shared Function GetAllResourcePK3Files() As List(Of ResourcePK3File)
+            Throw New NotImplementedException()
         End Function
 
         ''' <summary>
