@@ -73,6 +73,14 @@ Namespace Game
         End Function
 
         ''' <summary>
+        ''' Search and load all map info of all mod pk3
+        ''' </summary>
+        ''' <param name="IsSort">If sort maps by playing order.</param>
+        Public Shared Function GetAllMapPK3Files(IsSort As Boolean) As List(Of MapPK3File)
+
+        End Function
+
+        ''' <summary>
         ''' Used to storage data while sorting
         ''' </summary>
         Private Class bspSortingHelper

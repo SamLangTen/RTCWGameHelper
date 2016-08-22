@@ -67,7 +67,7 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("I:\Game For Windows\RTCW")>  _
+     Global.System.Configuration.DefaultSettingValueAttribute("J:\Game For Windows\RTCW")>  _
     Public Property RTCWPath() As String
         Get
             Return CType(Me("RTCWPath"),String)
