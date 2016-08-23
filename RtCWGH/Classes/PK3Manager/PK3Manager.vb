@@ -79,7 +79,7 @@ Namespace Game
         ''' Search and load all map info of all mod pk3
         ''' </summary>
         ''' <param name="IsSort">If sort maps by playing order.</param>
-        Public Shared Function GetAllMapPK3Files(IsSort As Boolean) As List(Of MapPK3File)
+        Public Shared Function GetAllMapPK3FilesInMain(IsSort As Boolean) As List(Of MapPK3File)
             Throw New NotImplementedException()
         End Function
 

@@ -6,7 +6,7 @@ Public Class DialogInteraction
     Public Shared Property OpenFileDialogFunc As OpenFileDialogDelegate
 
     Public Shared Function ShowOpenFileDialog(Filter As String) As OpenFileDialogReturnInfo
-        If Not DialogInteraction.OpenFileDialogFunc Is Nothing Then Return DialogInteraction.OpenFileDialogFunc(Filter) Else Return Nothing
+        Return OpenFileDialogFunc?(Filter)
     End Function
 
 End Class
