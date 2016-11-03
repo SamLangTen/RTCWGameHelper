@@ -79,7 +79,7 @@ Namespace Game
         ''' <summary>
         ''' The Path of RTCW,not main folder.
         ''' </summary>
-        Public Shared Property RTCWPath As String = My.Settings.RTCWPath
+        Public Shared Property RTCWPath As String
 
         ''' <summary>
         ''' Some flags about this version of RTCW,such as (ani,noani)
